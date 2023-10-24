@@ -1,5 +1,5 @@
 # PUP-AFRA-Form
-This is the unofficial PUP Application For Re-Admission (AFRA) Form.
+This is the unofficial website for the PUP Application For Re-Admission (AFRA) Form.
 
 
 ## Tools
