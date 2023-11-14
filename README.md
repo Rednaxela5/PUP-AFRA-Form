@@ -6,6 +6,8 @@ This is the unofficial website for the PUP Application For Re-Admission (AFRA) F
 The following tools and techonologies were involved in the making of this project
 * HTML
 * [Visual Studio Code](https://code.visualstudio.com/)
+* Figma
+* Canva
 
 ## Roadmap
 -   [x] ~~Select a manual form from PUP Website.~~
