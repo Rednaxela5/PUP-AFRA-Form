@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat', sans-serif;
+    background-color: #f4f6f9;
+}
+
+
+/* Start of header css */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    padding: 1rem 2rem;
+    z-index: 1000;
+}
+  
+#logo {
+      width: 50px;
+      height: 50px;
+      margin-left: 100px;
+}
+  
+#pupAfRA {
+    color: #880000;
+    font-size: 1.4rem;
+    font-weight: 750;
+    font-family: 'montserrat', sans-serif;
+    margin-left: 15px;
+}
+/* End of header css */
+
+
+/* Start of footer css */
+footer {
+    background-color: #5E0909;
+    font-size: 21px;
+    font-weight: 500;
+    font-family: 'montserrat', sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7.5rem;
+}
+  
+.footer-left a, .footer-right a {
+    color: #ffffff;
+    text-decoration: none;
+}
+  
+.footer-left a:hover, .footer-right a:hover {
+    text-decoration: underline;
+}
+  
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;
+    cursor: pointer;
+    transition: bottom 0.3s ease;
+}
+  
+#backToTopBtn img {
+    width: 90px; 
+    height: 90px;
+}
+  
+#backToTopBtn:hover {
+    bottom: 30px;
+}
+  
+#backToTopBtn:hover img {
+    content: url(hover-go-to-top_icon.png); 
+} 
+/* End of footer css */
+
+
+/* Start of form container css */
+.announcement {
+    text-align: center;
+    margin-top: 120px;
+  
+}
+
+.announcement h2 {
+    font-size: 40px;
+    color: #0E0D0D;
+}
+
+.form-container {
+    max-width: 1200px;
+    max-height: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+}
+/* End of form container css */
+
+
+/* Start of progress bar css */
+.progress-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 900px;
+    margin: 20px auto;
+}
+
+.step-button {
+    width: 40px;
+    height: 40px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.line {
+    border: 0;
+    background-color: #D9D9D9;
+    flex-grow: 5;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.line1 {
+    border: 0;
+    background-color: #D9D9D9;
+    flex-grow: 5;
+    padding: 3px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #5D0909 50%, #D9D9D9 50%);
+}
+
+.step-button:first-child {
+    background-color: #5D0909;
+}
+
+.step-text-container {
+    display: flex;
+    width: 980px;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+.step-text {
+    font-size: 13px;
+    font-weight: bold;
+    color: #555555;
+}
+
+.step-text:first-child {
+    margin-right: 40px;
+    margin-left: 15px;
+}
+
+.step-text:last-child {
+    margin-left: 10px;
+}
+/* End of progress bar css */
+
+
+/* Start of form content css */
+.name-section {
+    text-align: left;
+    padding: 20px;
+    margin-left: 100px;
+}
+
+.name-section h2 {
+    font-size: 22px;
+    color: #464040;
+    margin-bottom: 10px;
+}
+
+.input-fields {
+    display: flex;
+}
+
+.rounded-input {
+    border: 1.5px solid #555555;
+    border-radius: 10px;
+    padding: 15px;
+    margin-right: 10px;
+    width: 14rem;
+}
+
+.rounded-input::placeholder {
+    font-family: 'montserrat', sans-serif;
+    font-size: 20px; 
+    color: #888888; 
+}
+/* End of form content css */
+
+

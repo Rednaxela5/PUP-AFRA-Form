@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUP AFRA</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="applicationForReAdmission.css">
+</head>
+
+<body>
+
+    <header>
+        <img id="logo" src="PUPLogo.png" alt="PUP AFRA Logo">
+        <div id="pupAfRA">PUP AFRA</div>
+    </header>
+
+
+    <div class="announcement">
+        <h2>APPLICATION FOR RE-ADMISSION</h2>
+    </div>
+
+
+    <div class="form-container">
+        <!-- Progress bar starts here -->
+        <div class="progress-bar-container">
+            <button class="step-button"></button>
+            <div class="line1"></div>
+            <button class="step-button"></button>
+            <!-- turn the next line into line 2 and then turn line1 to line if nasa next page na :) ps. pwede siyang pseudo but ayaw kasi gumana sa end ko huhu-->
+            <div class="line"></div>
+            <button class="step-button"></button>
+            <div class="line"></div>
+            <button class="step-button"></button>
+        </div>
+        <!-- Progress bar ends here -->
+
+
+        <div class="step-text-container">
+            <div class="step-text">Applicant Info</div>
+            <div class="step-text">Personal Background</div>
+            <div class="step-text">Academic Background</div>
+            <div class="step-text">Upload Documents</div>
+        </div>
+
+
+        <!-- form content goes here -->
+        <form id="reAdmissionForm">
+            <div class="name-section">
+                <h2>Name</h2>
+                <input type="text" id="familyName" name="familyName" placeholder="Family Name" class="rounded-input">
+                <input type="text" id="givenName" name="givenName" placeholder="Given Name" class="rounded-input">
+                <input type="text" id="middleName" name="middleName" placeholder="Middle Name" class="rounded-input">
+            </div>
+        </form>
+    </div>
+
+
+    <div id="backToTopBtn">
+        <img src="go-to-top_icon.png" alt="Back to Top">
+    </div>
+
+
+    <footer>
+        <div class="footer-left">
+          <a href="https://www.pup.edu.ph/terms/" target="_blank">Terms of Use</a> | <a href="https://www.pup.edu.ph/privacy/" target="_blank">Privacy Statement</a>
+        </div>
+        <div class="footer-center">
+          © 2023 PUP AFRA
+        </div>
+        <div class="footer-right">
+          <a href="#">About</a> | <a href="https://www.pup.edu.ph/about/contactus" target="_blank">Contact</a> | Version 1.0
+    </footer>
+
+</body>
+</html>
