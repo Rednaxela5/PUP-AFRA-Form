@@ -17,7 +17,7 @@
     </header>
 
 
-    <div class="announcement">
+    <div class="title">
         <h2>APPLICATION FOR RE-ADMISSION</h2>
     </div>
 
@@ -34,8 +34,6 @@
             <div class="line"></div>
             <button class="step-button"></button>
         </div>
-        <!-- Progress bar ends here -->
-
 
         <div class="step-text-container">
             <div class="step-text">Applicant Info</div>
@@ -43,25 +41,182 @@
             <div class="step-text">Academic Background</div>
             <div class="step-text">Upload Documents</div>
         </div>
-
+        <!-- Progress bar ends here -->
 
         <!-- form content goes here -->
         <form id="reAdmissionForm">
+            <!-- ROW 1 AND 2 -->
             <div class="name-section">
                 <h2>Name</h2>
                 <input type="text" id="familyName" name="familyName" placeholder="Family Name" class="rounded-input">
                 <input type="text" id="givenName" name="givenName" placeholder="Given Name" class="rounded-input">
                 <input type="text" id="middleName" name="middleName" placeholder="Middle Name" class="rounded-input">
             </div>
+
+           <!-- ROW 3 -->
+           <div class="row3-text-container">
+                <div class="row3-text">Academic Term</div>
+                <div class="row3-text">Academic Year</div>
+                <div class="row3-text">College Department</div>
+            </div>
+            
+            <!-- ROW 4 -->
+            <div class="row4-fields-container">
+                <select id = "academicTerm">
+                    <option value="" disabled selected>Select Academic Term</option>
+                    <option value="1">1st semester</option>
+                    <option value="2">2nd semester</option>
+                </select>
+
+                <select id="academicYear1">
+                    <option value="" disabled selected>Select</option>
+                    <option value="2022">2024</option>
+                    <option value="2022">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2022">2021</option>
+                    <option value="2022">2020</option>
+                    <option value="2022">2019</option>
+                    <option value="2022">2018</option>
+                    <option value="2022">2017</option>
+                    <option value="2022">2016</option>
+                    <option value="2022">2015</option>
+                    <option value="2022">2014</option>
+                    <option value="2022">2013</option>
+                    <option value="2022">2012</option>
+                    <option value="2022">2011</option>
+                    <option value="2022">2010</option>
+                </select>
+                <span class="dash">-</span>
+                <select id="academicYear2">
+                    <option value="" disabled selected>Select</option>
+                    <option value="2022">2024</option>
+                    <option value="2022">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2022">2021</option>
+                    <option value="2022">2020</option>
+                    <option value="2022">2019</option>
+                    <option value="2022">2018</option>
+                    <option value="2022">2017</option>
+                    <option value="2022">2016</option>
+                    <option value="2022">2015</option>
+                    <option value="2022">2014</option>
+                    <option value="2022">2013</option>
+                    <option value="2022">2012</option>
+                    <option value="2022">2011</option>
+                    <option value="2022">2010</option>
+                </select>
+
+                <select id="collegeDepartment">
+                    <option value="" disabled selected>Select College Department</option>
+                    <option value="CAF">College of Accountancy and Finance (CAF)</option>
+                    <option value="CADBE">College of Architecture, Design and the Built Environment (CADBE)</option>
+                    <option value="CAL">College of Arts and Letters (CAL)</option>
+                    <option value="CBA"> College of Business Administration (CBA)</option>
+                    <option value="COC">College of Communication (COC)</option>
+                    <option value="CCIS">College of Computer and Information Sciences (CCIS)</option>
+                    <option value="COED">College of Education (COED)</option>
+                    <option value="CE">College of Engineering (CE)</option>
+                    <option value="CHK">College of Human Kinetics (CHK)</option>
+                    <option value="CL">College of Law (CL)</option>
+                    <option value="CPSPA">College of Political Science and Public Administration (CPSPA)</option>
+                    <option value="CSSD">College of Social Sciences and Development (CSSD)</option>
+                    <option value="CS">College of Science (CS)</option>
+                    <option value="CTHTM">College of Tourism, Hospitality and Transportation Management (CTHTM)</option>
+                </select>
+            </div>
+           
+            <!-- ROW 5 -->
+            <div class="row5-text-container">
+                <div class="row5-text">Is this the first time you apply for Re-Admission?</div>
+                <div class="row5-text">If no, when was the first application</div>
+            </div>
+            
+            <!-- ROW 6 -->
+            <div class="row6-fields-container">
+                <select id = "firstTimeApply" class = "firstTimeApply">
+                    <option value="" disabled selected>Select</option>
+                    <option value="1">Yes</option>
+                    <option value="2">No</option>
+                </select>
+
+                <input type="date" id="firstApplicationDate" name="firstApplicationDate">
+            </div>
+
+            <!-- ROW 7 -->
+            <div class="row7-text-container">
+                <div class="row7-text">Year Admitted in PUP</div>
+                <div class="row7-text">Admission Status</div>
+                <div class="row7-text">PUPCET Rating</div>
+                <div class="row7-text">H.S Average</div>
+            </div>
+
+            <!-- ROW 8 -->
+            <div class="row8-fields-container">     
+                <input type="date" id="yearAdmitted" name="yearAdmitted">
+                <select id = "admissionStatus" class = "admissionStatus">
+                    <option value="" disabled selected>Select</option>
+                    <option value="1">Option1</option>
+                    <option value="2">Option2</option>
+                    <option value="2">Option3</option>
+                </select>
+
+                <input type="number" id="pupcetRating" name="pupcetRating" min="1" max="100" step=".1">
+                <input type="number" id="hsAverage" name="hsAverage" min="1" max="100" step=".1">
+            </div>
+
+            <!-- ROW 9 -->
+            <div class="row9-text-container">
+                <div class="row9-text">Course Enrolled in</div>
+                <div class="row9-text">Year Level</div>
+                <div class="row9-text">Total Units Earned in PUP</div>
+            </div>
+
+            <!-- ROW 10 -->
+            <div class="row10-fields-container">
+                <input type="text" id="courseEnrolled" name="courseEnrolled"  class="rounded-input">
+
+                <select id = "yearLevel" class = "yearLevel">
+                    <option value="" disabled selected>Select Year Level</option>
+                    <option value="1">First Year</option>
+                    <option value="2">Second Year</option>
+                    <option value="2">Third Year</option>
+                    <option value="2">Fourth Year</option>
+                </select>
+
+                <input type="number" id="unitsEarned" name="unitsEarned" min="1" max="100" step="1">
+            </div>
+
+            <!-- ROW 11 -->
+            <div class="row11-text-container">
+                <div class="row11-text">Reason for Stopping</div>
+            </div>
+
+            <!-- ROW 12 -->
+            <div class="row12-fields-container">
+                <textarea id="reasonForStopping" name="reasonForStopping"></textarea>
+            </div>
+
+            <!-- ROW 13 -->
+            <div class="row13-text-container">
+                <div class="row13-text">Reason/s for Continuing my Studies</div>
+            </div>
+
+            <!-- ROW 14 -->
+            <div class="row14-fields-container">
+                <textarea id="reasonForContinuing" name="reasonForContinuing"></textarea>
+            </div>
         </form>
     </div>
 
+    <div class="next-button">
+        <span class="icon">&#8594;</span>
+        <span class="text">Next</span>
+    </div>
 
     <div id="backToTopBtn">
         <img src="go-to-top_icon.png" alt="Back to Top">
     </div>
-
-
+    
     <footer>
         <div class="footer-left">
           <a href="https://www.pup.edu.ph/terms/" target="_blank">Terms of Use</a> | <a href="https://www.pup.edu.ph/privacy/" target="_blank">Privacy Statement</a>
