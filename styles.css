@@ -1,29 +1,70 @@
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Gotham', sans-serif;
-    font-weight: 400;
-}
-.form-container {
-    align-items: center;
-    max-width: 500px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border: 0;
-    border-radius: 10px;
-
-}
-
-body {
+    font-family: 'montserrat', sans-serif;
     background-color: #f4f6f9;
+  }
+  
+/*header css*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.2);
+    padding: 1rem 2rem;
+    z-index: 1000;
 }
 
-input {
-    width: 80%;  
-    padding: 8px;
-    border: 1px solid #878787;
-    border-radius: 5px;
-    font-family: 'Roboto', sans-serif;
+#logo {
+    width: 50px;
+    height: 50px;
+    margin-left: 100px;
+}
+
+#pupAfRA {
+    color: #880000;
+    font-size: 1.4rem;
+    font-weight: 750;
+    font-family: 'montserrat', sans-serif;
+    margin-left: 15px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav a {
+    color: #464040;
+    text-decoration: none;
+    margin-right: 10px;
+    padding-left: 1000px;
+  }
+
+/*start of footer css*/
+footer {
+    background-color: #5E0909;
+    font-size: 21px;
+    font-weight: 500;
+    font-family: 'montserrat', sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7.5rem;
+  
+}
+  
+.footer-left a, .footer-right a {
+color: #ffffff;
+text-decoration: none;
+}
+
+.footer-left a:hover, .footer-right a:hover {
+text-decoration: underline;
 }
