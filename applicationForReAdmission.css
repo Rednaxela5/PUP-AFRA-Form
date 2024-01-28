@@ -201,6 +201,8 @@ footer {
     padding: 15px;
     margin-right: 10px;
     width: 14rem;
+    font-family: 'montserrat', sans-serif;
+    font-size: 20px; 
 }
 
 .rounded-input::placeholder {
@@ -262,7 +264,7 @@ select option {
 select option:disabled {
     color:#fff;
     background-color: #D9D9D9;
-  }
+}
 
 .dash {
     font-size: 15px;
@@ -398,6 +400,8 @@ input[type="date"] { /* CSS for all the date*/
     width: 19rem;
     height: 25px;
     margin-top: 11px;
+    font-family: 'montserrat', sans-serif;
+    font-size: 20px; 
 }
 
 #yearLevel {
@@ -423,6 +427,8 @@ input[type="date"] { /* CSS for all the date*/
     margin-left: 10px;
     width: 50rem;
     height: 6rem;
+    font-family: 'montserrat', sans-serif;
+    font-size: 20px; 
 }
 
 /* row 13 */
@@ -452,6 +458,8 @@ input[type="date"] { /* CSS for all the date*/
     width: 50rem;
     height: 6rem;
     margin-bottom: 30px;
+    font-family: 'montserrat', sans-serif;
+    font-size: 20px; 
 }
 /* end of row 14 */
 /* End of form content css */
