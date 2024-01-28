@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUP AFRA</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="personalBackground.css">
+</head>
+
+<body>
+
+    <header>
+        <img id="logo" src="PUPLogo.png" alt="PUP AFRA Logo">
+        <div id="pupAfRA">PUP AFRA</div>
+    </header>
+
+    <div class="title">
+        <h2>PERSONAL BACKGROUND</h2>
+    </div>
+
+
+    <div class="form-container">
+        <!-- Progress bar starts here -->
+        <div class="progress-bar-container">
+            <button class="step-button"></button>
+            <div class="line1"></div>
+            <button class="step-button"></button>
+            <!-- turn the next line into line 2 and then turn line1 to line if nasa next page na :) ps. pwede siyang pseudo but ayaw kasi gumana sa end ko huhu-->
+            <div class="line2"></div>
+            <button class="step-button"></button>
+            <div class="line"></div>
+            <button class="step-button"></button>
+        </div>
+
+        <div class="step-text-container">
+            <div class="step-text">Applicant Info</div>
+            <div class="step-text">Personal Background</div>
+            <div class="step-text">Academic Background</div>
+            <div class="step-text">Upload Documents</div>
+        </div>
+        <!-- Progress bar ends here -->
+
+        <!-- form content goes here -->
+        <form id="reAdmissionForm">
+            <!-- ROW 1 AND 2 -->
+            <div class="name-section">
+                <div class="row1-text">Name</div>
+                <input type="text" id="familyName" name="familyName" class="rounded-input">
+                <input type="text" id="givenName" name="givenName" class="rounded-input">
+                <input type="text" id="middleName" name="middleName" class="rounded-input">
+            </div>
+
+            <div class="row3-text-container">
+                <div class="row3-text">Sex</div>
+                <div class="row3-text">Age</div>
+                <div class="row3-text">Civil Status</div>
+            </div>
+
+            <!-- ROW 4 -->
+            <div class="row4-fields-container">
+                <select id = "sex">
+                    <option value="" disabled selected>Select</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                </select>
+
+                <select id = "age">
+                    <option value="" disabled selected>Select</option>
+                    <option value="1">16</option>
+                    <option value="2">17</option>
+                    <option value="3">18</option>
+                    <option value="4">19</option>
+                    <option value="5">20</option>
+                    <option value="6">Above 20</option>
+                </select>
+
+                <select id = "civilStatus">
+                    <option value="" disabled selected>Select</option>
+                    <option value="1">Single</option>
+                    <option value="2">Married</option>
+                </select>
+            </div>
+
+            <!-- ROW 5 -->
+            <div class="row5-text-container">
+                <div class="row5-text">High School Graduated From</div>
+                <div class="row5-text">Location of High School</div>
+            </div>
+
+            <!-- ROW 6 -->
+            <div class="row6-fields-container">
+                <input type="text" id="highSchool" name="highSchool" class="rounded-input">
+                <select id = "highschoolLocation">
+                    <option value="" disabled selected>Select Location</option>
+                    <option value="1">Outside Metro Manila</option>
+                    <option value="2">Inside Metro Manila</option>
+                </select>
+            </div>
+
+            <!-- ROW 7 -->
+            <div class="row7-text-container">
+                <div class="main-text">
+                    <div class="row7-text">Home Mailing Address</div>
+                </div>
+                <div class="row7-subtext">
+                    <div class="row7-text">Region</div>
+                    <div class="row7-text">Province</div>
+                </div>
+            </div>
+
+            <!-- ROW 8 -->
+            <div class="row8-fields-container">
+                <select id = "region">
+                    <option value="" disabled selected>Select Region</option>
+                </select>
+                <select id = "province">
+                    <option value="" disabled selected>Select Province</option>
+                </select>
+            </div>
+
+            <!-- ROW 9 -->
+            <div class="row9-text-container">
+                    <div class="row9-text">City/Municipality</div>
+                    <div class="row9-text">Barangay</div>
+            </div>
+
+            <!-- ROW 10 -->
+            <div class="row10-fields-container">
+                <select id = "city">
+                    <option value="" disabled selected>Select City/Municipality</option>
+                </select>
+                <select id = "barangay">
+                    <option value="" disabled selected>Select Barangay</option>
+                </select>
+            </div>
+
+            <!-- ROW 11 -->
+            <div class="row11-text-container">
+                <div class="row11-text">Street Name, Building, House No.</div>
+                <div class="row11-text">Postal Code</div>
+            </div>
+
+            <!-- ROW 12 -->
+            <div class="row12-fields-container">
+                <input type="text" id="streetName" name="streetName" placeholder="Enter Street Name, Building, House No." class="rounded-input">
+                <input type="text" id="postalCode" name="postalCode" placeholder="Enter Postal Code" class="rounded-input">
+            </div>
+            
+            <!-- ROW 13 -->
+            <div class="row13-text-container">
+                <div class="main-text">
+                    <div class="row13-text">Provincial Address</div>
+                </div>
+
+                <div class="row13-sameAddress">
+                    <input type="checkbox" id="sameAddress" name="sameAddress">
+                    <label for="sameAddress">Same as Home/Mailing Address</label>
+                </div>
+
+                <div class="row13-subtext">
+                    <div class="row13-text">Region</div>
+                    <div class="row13-text">Province</div>
+                </div>
+            </div>
+
+            <!-- ROW 14 -->
+            <div class="row14-fields-container">
+                <select id = "region2">
+                    <option value="" disabled selected>Select Region</option>
+                </select>
+                <select id = "province2">
+                    <option value="" disabled selected>Select Province</option>
+                </select>
+            </div>
+
+            <!-- ROW 15 -->
+            <div class="row15-text-container">
+                <div class="row15-text">City/Municipality</div>
+                <div class="row15-text">Barangay</div>
+            </div>
+
+            <!-- ROW 16 -->
+            <div class="row16-fields-container">
+                <select id = "city2">
+                    <option value="" disabled selected>Select City/Municipality</option>
+                </select>
+                <select id = "barangay2">
+                    <option value="" disabled selected>Select Barangay</option>
+                </select>
+            </div>
+
+            <!-- ROW 17 -->
+            <div class="row17-text-container">
+                <div class="row17-text">Street Name, Building, House No.</div>
+                <div class="row17-text">Postal Code</div>
+            </div>
+
+            <!-- ROW 18 -->
+            <div class="row18-fields-container">
+                <input type="text" id="streetName" name="streetName2" placeholder="Enter Street Name, Building, House No." class="rounded-input">
+                <input type="text" id="postalCode" name="postalCode2" placeholder="Enter Postal Code" class="rounded-input">
+            </div>
+
+            <!-- ROW 19 -->
+            <div class="row19-text-container">
+                <div class="row19-text">Academic Term of Admission in PUP</div>
+                <div class="row19-text">Academic Year</div>
+            </div>
+
+            <!-- ROW 20 -->
+            <div class="row20-fields-container">
+                <select id = "academicTerm">
+                    <option value="" disabled selected>Select Academic Term</option>
+                    <option value="1">1st semester</option>
+                    <option value="2">2nd semester</option>
+                </select>
+                
+                <select id="academicYear1">
+                    <option value="" disabled selected>Select</option>
+                    <option value="2022">2024</option>
+                    <option value="2022">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2022">2021</option>
+                    <option value="2022">2020</option>
+                    <option value="2022">2019</option>
+                    <option value="2022">2018</option>
+                    <option value="2022">2017</option>
+                    <option value="2022">2016</option>
+                    <option value="2022">2015</option>
+                    <option value="2022">2014</option>
+                    <option value="2022">2013</option>
+                    <option value="2022">2012</option>
+                    <option value="2022">2011</option>
+                    <option value="2022">2010</option>
+                </select>
+                <span class="dash">-</span>
+                <select id="academicYear2">
+                    <option value="" disabled selected>Select</option>
+                    <option value="2022">2024</option>
+                    <option value="2022">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2022">2021</option>
+                    <option value="2022">2020</option>
+                    <option value="2022">2019</option>
+                    <option value="2022">2018</option>
+                    <option value="2022">2017</option>
+                    <option value="2022">2016</option>
+                    <option value="2022">2015</option>
+                    <option value="2022">2014</option>
+                    <option value="2022">2013</option>
+                    <option value="2022">2012</option>
+                    <option value="2022">2011</option>
+                    <option value="2022">2010</option>
+                </select>
+            </div>
+
+
+            <!-- ROW 21 -->
+            <div class="row21-text-container">
+                <div class="row21-text">Academic Year you stopped/dropped</div>
+                <div class="row21-text">Academic Year</div>
+            </div>
+
+            <!-- ROW 22 -->
+            <div class="row22-fields-container">
+                <select id = "academicTerm">
+                    <option value="" disabled selected>Select Academic Term</option>
+                    <option value="1">1st semester</option>
+                    <option value="2">2nd semester</option>
+                </select>
+                
+                <select id="academicYear2-1">
+                    <option value="" disabled selected>Select</option>
+                    <option value="2022">2024</option>
+                    <option value="2022">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2022">2021</option>
+                    <option value="2022">2020</option>
+                    <option value="2022">2019</option>
+                    <option value="2022">2018</option>
+                    <option value="2022">2017</option>
+                    <option value="2022">2016</option>
+                    <option value="2022">2015</option>
+                    <option value="2022">2014</option>
+                    <option value="2022">2013</option>
+                    <option value="2022">2012</option>
+                    <option value="2022">2011</option>
+                    <option value="2022">2010</option>
+                </select>
+                <span class="dash">-</span>
+                <select id="academicYear2-2">
+                    <option value="" disabled selected>Select</option>
+                    <option value="2022">2024</option>
+                    <option value="2022">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2022">2021</option>
+                    <option value="2022">2020</option>
+                    <option value="2022">2019</option>
+                    <option value="2022">2018</option>
+                    <option value="2022">2017</option>
+                    <option value="2022">2016</option>
+                    <option value="2022">2015</option>
+                    <option value="2022">2014</option>
+                    <option value="2022">2013</option>
+                    <option value="2022">2012</option>
+                    <option value="2022">2011</option>
+                    <option value="2022">2010</option>
+                </select>
+            </div>
+
+            <!-- ROW 23 -->
+
+            <div class="row23-text-container">
+                <div class="row23-text">To whom are you living when you are studying in PUP?</div>
+            </div>
+
+            <!-- ROW 24 -->
+            <div class="row24-fields-container">
+                <select id = "livingWithWhom">
+                    <option value="" disabled selected>Select Option</option>
+                    <option value="1">Parents</option>
+                    <option value="2">Relatives</option>
+                    <option value="3">Others, please specify</option>
+                </select>
+            
+
+                <!-- Additional input field for specifying others -->
+                <div id="othersContainer" style="display: none;">
+                    <label for="otherSpecify">Specify Others:</label>
+                    <input type="text" id="otherSpecify" name="otherSpecify">
+                </div>
+
+                <!-- Script for showing the additional input field
+                    function handleLivingWithWhom() {
+                        var livingWithWhomSelect = document.getElementById("livingWithWhom");
+                        var othersContainer = document.getElementById("othersContainer");
+
+                        if (livingWithWhomSelect.value == "3") {
+                            othersContainer.style.display = "block";
+                        } else {
+                            othersContainer.style.display = "none";
+                        }
+                    }
+                -->
+            </div>
+        </form>
+    </div>
+
+    <div class="buttons-container">
+        <!-- Back button -->
+        <div class="back-button">
+            <span class="back-icon">&#8592;</span>
+            <span class="back-text">Next</span>
+        </div>
+
+        <!-- Next button -->
+        <div class="next-button">
+            <span class="next-icon">&#8594;</span>
+            <span class="next-text">Next</span>
+        </div>
+    </div>
+    
+    <div id="backToTopBtn">
+        <img src="go-to-top_icon.png" alt="Back to Top">
+    </div>
+
+    <footer>
+        <div class="footer-left">
+          <a href="https://www.pup.edu.ph/terms/" target="_blank">Terms of Use</a> | <a href="https://www.pup.edu.ph/privacy/" target="_blank">Privacy Statement</a>
+        </div>
+        <div class="footer-center">
+          © 2023 PUP AFRA
+        </div>
+        <div class="footer-right">
+          <a href="#">About</a> | <a href="https://www.pup.edu.ph/about/contactus" target="_blank">Contact</a> | Version 1.0
+    </footer>
+
+</body>
+</html>

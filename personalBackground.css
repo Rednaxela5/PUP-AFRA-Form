@@ -1,0 +1,759 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat', sans-serif;
+    background-color: #f4f6f9;
+}
+
+
+/* Start of header css */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    padding: 1rem 2rem;
+    z-index: 1000;
+}
+  
+#logo {
+      width: 50px;
+      height: 50px;
+      margin-left: 100px;
+}
+  
+#pupAfRA {
+    color: #880000;
+    font-size: 1.4rem;
+    font-weight: 750;
+    font-family: 'montserrat', sans-serif;
+    margin-left: 15px;
+}
+/* End of header css */
+
+/* Start of footer css */
+footer {
+    background-color: #5E0909;
+    font-size: 21px;
+    font-weight: 500;
+    font-family: 'montserrat', sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7.5rem;
+}
+  
+.footer-left a, .footer-right a {
+    color: #ffffff;
+    text-decoration: none;
+}
+  
+.footer-left a:hover, .footer-right a:hover {
+    text-decoration: underline;
+}
+  
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;
+    cursor: pointer;
+    transition: bottom 0.3s ease;
+}
+  
+#backToTopBtn img {
+    width: 90px; 
+    height: 90px;
+}
+  
+#backToTopBtn:hover {
+    bottom: 30px;
+}
+  
+#backToTopBtn:hover img {
+    content: url(hover-go-to-top_icon.png); 
+} 
+/* End of footer css */
+
+/* Start of title css */
+.title {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.title h2 {
+    font-size: 40px;
+    color: #0E0D0D;
+}
+/* End of title css */
+
+/* Start of form container css */
+.form-container {
+    max-width: 1200px;
+    max-height: 2000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+/* End of form container css */
+
+
+/* Start of progress bar css */
+.progress-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 900px;
+    margin: 20px auto;
+}
+
+.step-button {
+    width: 40px;
+    height: 40px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.line {
+    border: 0;
+    background-color: #D9D9D9;
+    flex-grow: 5;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.line1 {
+    border: 0;
+    background-color: #D9D9D9;
+    flex-grow: 5;
+    padding: 3px;
+    border-radius: 5px;
+    background:#5D0909;
+}
+
+.line2 {
+    border: 0;
+    background-color: #D9D9D9;
+    flex-grow: 5;
+    padding: 3px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #5D0909 50%, #D9D9D9 50%);
+}
+
+.step-button:first-child, .step-button:nth-child(3) {
+    background-color: #5D0909;
+}
+
+.step-text-container {
+    display: flex;
+    width: 980px;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+.step-text {
+    font-size: 13px;
+    font-weight: bold;
+    color: #555555;
+}
+
+.step-text:first-child {
+    margin-right: 40px;
+    margin-left: 15px;
+}
+
+.step-text:last-child {
+    margin-left: 10px;
+}
+/* End of progress bar css */
+
+/* row 1 and row 2 */
+.name-section {
+    text-align: left;
+    padding: 20px;
+    margin-left: 100px;
+}
+
+.row1-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #464040;
+    padding-bottom: 15px;
+    padding-left: 5px;
+}
+
+.input-fields {
+    display: flex;
+}
+
+.rounded-input {
+    border: 1.5px solid #555555;
+    border-radius: 10px;
+    padding: 15px;
+    margin-right: 10px;
+    width: 14rem;
+    font-family: 'montserrat', sans-serif;
+    font-size: 20px; 
+}
+
+.rounded-input::placeholder {
+    font-family: 'montserrat', sans-serif;
+    font-size: 20px; 
+    color: #888888; 
+}
+/* end of row 1 and row 2*/
+
+/* row 3 */
+.row3-text-container {
+    display: flex;
+    width: 950px; 
+    justify-content: space-between;
+    margin: 10px auto;
+    text-align: left;
+}
+
+.row3-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #464040;
+}
+
+.row3-text:nth-child(2) {
+    margin: 0 60px 0 8px;
+}
+
+.row3-text:last-child {
+    margin: 0 215px 0 10px;
+}
+/* end row 3 */
+
+/* row 4 */
+.row4-fields-container {
+    display: flex;
+    width: 985px; 
+    justify-content: space-between;
+    margin-left: 110px;
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+select {
+    border: 1.5px solid #555555;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #888888;
+}
+
+#sex {
+    width: 14rem;
+}
+
+#age {
+    width: 17.5rem;
+}
+
+#civilStatus {
+    width: 18.5rem;
+}
+
+select option {
+    font-family: 'montserrat', sans-serif;
+    font-size: 20px;   
+    color: #0E0D0D;
+}
+
+select option:disabled {
+    color:#fff;
+    background-color: #D9D9D9;
+}
+/* end row 4 */
+
+/* row 5 */
+.row5-text-container {
+    display: flex;
+    width: 950px; 
+    justify-content: space-between;
+    margin: 10px auto;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.row5-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #464040;
+}
+
+.row5-text:last-child {
+    margin-right: 85px;
+}
+/* end of row 5 */
+
+/* row 6 */
+.row6-fields-container {
+    display: flex;
+    width: 985px; 
+    justify-content: space-between;
+    margin-left: 110px;
+    text-align: left;
+}
+
+#highSchool {
+    border: 1.5px solid #555555;
+    border-radius: 10px;
+    margin-left: 8px;
+    width: 30rem;
+    height: 1.3rem;
+    margin-top: 8px;
+}
+
+#highschoolLocation {
+    width: 18rem;
+}
+/* end of row 6 */
+
+/* row 7 */
+.row7-text-container {
+    width: 950px; 
+    justify-content: space-between;
+    margin: 10px auto;
+    text-align: left;
+    margin-top: 20px;
+    
+}
+.main-text {
+    padding-bottom: 15px;
+}
+.row7-subtext {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row7-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #464040;
+    margin-right: 10px;
+}
+
+.row7-text:last-child {
+    margin-right: 18.5rem;
+}
+/* end of row 7 */
+
+/* row 8 */
+.row8-fields-container {
+    display: flex;
+    width: 985px; 
+    justify-content: space-between;
+    margin-left: 110px;
+    text-align: left;
+}
+
+#region, #province {
+    width: 50rem;
+}
+/* end of row 8 */
+
+/* row 9 */
+.row9-text-container {
+    display: flex;
+    width: 950px; 
+    justify-content: space-between;
+    margin: 10px auto;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.row9-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #464040;
+}
+
+.row9-text:last-child {
+    margin-right: 18.1rem;
+}
+/* end of row 9 */
+
+/* row 10 */
+.row10-fields-container {
+    display: flex;
+    width: 985px; 
+    justify-content: space-between;
+    margin-left: 110px;
+    text-align: left;
+}
+
+#city, #barangay {
+    width: 50rem;
+}
+/* end of row 10 */
+
+/* row 11 */
+.row11-text-container {
+    display: flex;
+    width: 950px; 
+    justify-content: space-between;
+    margin: 10px auto;
+    text-align: left;
+    margin-top: 20px;
+    padding-bottom: 8px;
+}
+
+.row11-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #464040;
+}
+
+.row11-text:last-child {
+    margin-right: 6.5rem;
+}
+/* end of row 11 */
+
+/* row 12 */
+.row12-fields-container {
+    display: flex;
+    width: 976px; 
+    justify-content: space-between;
+    margin-left: 120px;
+    text-align: left;
+}
+
+#streetName{
+    width: 32.6rem;
+}
+
+#postalCode {
+    width: 11.8rem;
+}
+/* end of row 12 */
+
+/* row 13 */
+.row13-text-container {
+    width: 950px; 
+    justify-content: space-between;
+    margin: 10px auto;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.row13-sameAddress input[type="checkbox"] {
+    border: 2px solid #555555;
+    width: 17px; /* Adjust the width */
+    height: 17px; /* Adjust the height */
+    border-radius: 3px; /* Adjust the border radius to make it square */
+}
+
+.main-text {
+    padding-top: 15px;
+}
+
+.row13-subtext {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.row13-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #464040;
+    margin-right: 10px;
+}
+
+.row13-text:last-child {
+    margin-right: 18.5rem;
+}
+/* end of row 13 */
+
+/* row 14 */
+.row14-fields-container {
+    display: flex;
+    width: 985px; 
+    justify-content: space-between;
+    margin-left: 110px;
+    text-align: left;
+}
+
+#region2, #province2 {
+    width: 50rem;
+}
+/* end of row 14 */
+
+/* row 15 */
+.row15-text-container {
+    display: flex;
+    width: 950px; 
+    justify-content: space-between;
+    margin: 10px auto;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.row15-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #464040;
+}
+
+.row15-text:last-child {
+    margin-right: 18.1rem;
+}
+/* end of row 15 */
+
+/* row 16 */
+.row16-fields-container {
+    display: flex;
+    width: 985px; 
+    justify-content: space-between;
+    margin-left: 110px;
+    text-align: left;
+}
+
+#city2, #barangay2 {
+    width: 50rem;
+}
+/* end of row 16 */
+
+/* row 17 */
+.row17-text-container {
+    display: flex;
+    width: 950px; 
+    justify-content: space-between;
+    margin: 10px auto;
+    text-align: left;
+    margin-top: 20px;
+    padding-bottom: 8px;
+}
+
+.row17-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #464040;
+}
+
+.row17-text:last-child {
+    margin-right: 6.5rem;
+}
+/* end of row 17 */
+
+/* row 18 */
+.row18-fields-container {
+    display: flex;
+    width: 976px; 
+    justify-content: space-between;
+    margin-left: 120px;
+    text-align: left;
+}
+
+#streetName2{
+    width: 32.6rem;
+}
+
+#postalCode2 {
+    width: 11.8rem;
+}
+/* end of row 18 */
+
+/* row 19 */
+.row19-text-container {
+    display: flex;
+    width: 950px; 
+    justify-content: space-between;
+    margin: 10px auto;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.row19-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #464040;
+}
+
+.row19-text:last-child {
+    margin-right: 15.3rem;
+}
+/* end of row 19 */
+
+/* row 20 */
+.row20-fields-container {
+    display: flex;
+    width: 985px; 
+    justify-content: space-between;
+    margin-left: 110px;
+    text-align: left;
+}
+
+#academicTerm {
+    width: 25rem;
+}
+
+#academicYear1, #academicYear2 {
+    width: 12rem;
+}
+.dash {
+    font-size: 15px;
+    font-weight: bolder;
+    margin-top: 25px;
+}
+
+/* row 21 */
+.row21-text-container {
+    display: flex;
+    width: 950px; 
+    justify-content: space-between;
+    margin: 10px auto;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.row21-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #464040;
+}
+
+.row21-text:last-child {
+    margin-right: 15.3rem;
+}
+/* end of row 21 */
+
+/* row 22 */
+.row22-fields-container {
+    display: flex;
+    width: 985px; 
+    justify-content: space-between;
+    margin-left: 110px;
+    text-align: left;
+}
+
+#academicTerm {
+    width: 25rem;
+}
+
+#academicYear2-1, #academicYear2-2 {
+    width: 12rem;
+}
+.dash {
+    font-size: 15px;
+    font-weight: bolder;
+    margin-top: 25px;
+}
+/* end of row 22 */
+
+/* row 23 */
+.row23-text-container {
+    display: flex;
+    width: 950px; 
+    justify-content: space-between;
+    margin: 10px auto;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.row23-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #464040;
+}
+/* end of row 23 */
+
+/* row 24 */
+.row24-fields-container {
+    display: flex;
+    width: 985px; 
+    justify-content: space-between;
+    margin-left: 110px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+#livingWithWhom {
+    width: 50rem;
+}
+/* end of row 24 */
+
+/* Start of buttons container css */
+.buttons-container {
+    display: flex;
+    width: 62rem;
+    margin: 0 auto;
+}
+
+/* Start of next button css */
+.next-button {
+    display: flex;
+    align-items: center;
+    background-color: #880000;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: 'monserrat', sans-serif;
+    padding: 10px 25px;
+    width: 100px;
+    margin-left: 76%;
+    margin-bottom: 50px;
+    border-radius: 30px 30px 30px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.next-button:hover {
+    background-color: #555555;
+}
+
+.next-text {
+    margin-left: 10px;
+}
+
+.next-icon {
+    font-size: 30px;
+}
+/* End of next button css */
+
+/* Start of back button css */
+.back-button {
+    display: flex;
+    align-items: center;
+    background-color: #B3B3B3;
+    color: #464040;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: 'monserrat', sans-serif;
+    padding: 10px 25px;
+    width: 100px;
+    margin-bottom: 50px;
+    border-radius: 30px 30px 30px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #555555;
+    color: #fff;
+}
+
+.back-text {
+    margin-left: 10px;
+}
+
+.back-icon {
+    font-size: 30px;
+}
+/* End of back button css */
+/* End of buttons container css */
