@@ -8,14 +8,14 @@ body {
 
 /* Start of header css */
 header {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
     display: flex;
     align-items: center;
     background-color: rgba(255, 255, 255, 1);
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.2);
     padding: 1rem 2rem;
     z-index: 1000;
 }
@@ -31,8 +31,18 @@ header {
     font-size: 1.4rem;
     font-weight: 750;
     font-family: 'montserrat', sans-serif;
-    margin-left: 15px;
+    margin-left: 20px;
 }
+  
+  #pupAfRA a{
+    text-decoration: none;
+    color: #880000;
+}
+  
+#pupAfRA a:hover{
+    color: #701010;
+}
+  
 /* End of header css */
 
 /* Start of footer css */
@@ -65,6 +75,11 @@ footer {
     transition: bottom 0.3s ease;
 }
   
+#topBtnIcon {
+    width: 90px;
+    height: 90px;
+}
+  
 #backToTopBtn img {
     width: 90px; 
     height: 90px;
@@ -75,8 +90,8 @@ footer {
 }
   
 #backToTopBtn:hover img {
-    content: url(hover-go-to-top_icon.png); 
-} 
+    content: url(/assets/icons/hover-go-to-top_icon.png); 
+}
 /* End of footer css */
 
 /* Start of title css */
@@ -721,9 +736,12 @@ select option:disabled {
     margin-left: 10px;
 }
 
-.next-icon {
-    font-size: 30px;
+.fa-arrow-right {
+    font-size: 23px;
 }
+
+
+
 /* End of next button css */
 
 /* Start of back button css */
@@ -752,8 +770,8 @@ select option:disabled {
     margin-left: 10px;
 }
 
-.back-icon {
-    font-size: 30px;
+.fa-arrow-left {
+    font-size: 23px;
 }
 /* End of back button css */
 /* End of buttons container css */
