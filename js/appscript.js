@@ -1,9 +1,9 @@
-// // Apply now button: added a click event listener
-// document.getElementById("applyNowButton").addEventListener("click", function() 
-// {
-//     // Redirect to login.html
-//     window.location.href = "/pages/login.html";
-// }); 
+// Apply now button: added a click event listener
+document.getElementById("applyNowButton").addEventListener("click", function() 
+{
+    // Redirect to login.html
+    window.location.href = "/pages/login.html";
+}); 
 
 // Go to top button
 // Get the button
