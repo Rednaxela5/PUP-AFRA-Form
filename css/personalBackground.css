@@ -30,7 +30,6 @@ header {
     color: #880000;
     font-size: 1.4rem;
     font-weight: 750;
-    font-family: 'montserrat', sans-serif;
     margin-left: 15px;
 }
 /* End of header css */
@@ -40,7 +39,6 @@ footer {
     background-color: #5E0909;
     font-size: 21px;
     font-weight: 500;
-    font-family: 'montserrat', sans-serif;
     color: #ffffff;
     display: flex;
     justify-content: space-between;
@@ -75,7 +73,7 @@ footer {
 }
   
 #backToTopBtn:hover img {
-    content: url(hover-go-to-top_icon.png); 
+    content: url(/assets/icons/hover-go-to-top_icon.png); 
 } 
 /* End of footer css */
 
@@ -187,10 +185,10 @@ footer {
     font-size: 20px;
     font-weight: bold;
     color: #464040;
-    padding-bottom: 15px;
-    padding-left: 5px;
+    padding: 17px 0 15px 5px;
 }
 
+/* Start of input fields css */
 .input-fields {
     display: flex;
 }
@@ -210,6 +208,7 @@ footer {
     font-size: 20px; 
     color: #888888; 
 }
+/* End of input fields css */
 /* end of row 1 and row 2*/
 
 /* row 3 */
@@ -246,16 +245,6 @@ footer {
     padding-bottom: 5px;
 }
 
-select {
-    border: 1.5px solid #555555;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 8px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    color: #888888;
-}
-
 #sex {
     width: 14rem;
 }
@@ -266,6 +255,18 @@ select {
 
 #civilStatus {
     width: 18.5rem;
+}
+/* end row 4 */
+
+/* Start of select css */
+select {
+    border: 1.5px solid #555555;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #888888;
 }
 
 select option {
@@ -278,7 +279,7 @@ select option:disabled {
     color:#fff;
     background-color: #D9D9D9;
 }
-/* end row 4 */
+/* End of select css */
 
 /* row 5 */
 .row5-text-container {
@@ -453,9 +454,13 @@ select option:disabled {
 
 .row13-sameAddress input[type="checkbox"] {
     border: 2px solid #555555;
-    width: 17px; /* Adjust the width */
-    height: 17px; /* Adjust the height */
-    border-radius: 3px; /* Adjust the border radius to make it square */
+    width: 20px;
+    height: 20px; 
+    border-radius: 3px;
+    
+    /* Adjust the position as needed */
+    position: relative;
+    top: 3px;
 }
 
 .main-text {
@@ -714,7 +719,7 @@ select option:disabled {
 }
 
 .next-button:hover {
-    background-color: #555555;
+    background-color: #B72F17;
 }
 
 .next-text {

@@ -30,7 +30,6 @@ header {
     color: #880000;
     font-size: 1.4rem;
     font-weight: 750;
-    font-family: 'montserrat', sans-serif;
     margin-left: 15px;
 }
 /* End of header css */
@@ -41,7 +40,6 @@ footer {
     background-color: #5E0909;
     font-size: 21px;
     font-weight: 500;
-    font-family: 'montserrat', sans-serif;
     color: #ffffff;
     display: flex;
     justify-content: space-between;
@@ -76,7 +74,7 @@ footer {
 }
   
 #backToTopBtn:hover img {
-    content: url(hover-go-to-top_icon.png); 
+    content: url(/assets/icons/hover-go-to-top_icon.png); 
 } 
 /* End of footer css */
 
@@ -179,7 +177,11 @@ footer {
     margin-left: 100px;
 }
 
-.name-section h2, 
+.name-section h2{
+    padding-left: 7px;
+}
+
+.name-section h2,
 .row3-text,
 .row5-text,
 .row7-text,
@@ -457,7 +459,7 @@ input[type="date"] { /* CSS for all the date*/
     margin-right: 20px;
     width: 50rem;
     height: 6rem;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     font-family: 'montserrat', sans-serif;
     font-size: 20px; 
 }
@@ -483,7 +485,7 @@ input[type="date"] { /* CSS for all the date*/
 }
 
 .next-button:hover {
-    background-color: #555555;
+    background-color: #B72F17;
 }
 
 .text {

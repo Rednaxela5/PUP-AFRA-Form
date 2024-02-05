@@ -1,0 +1,300 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat', sans-serif;
+    background-color: #f4f6f9;
+}
+
+/* Start of header css */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    padding: 1rem 2rem;
+    z-index: 1000;
+}
+  
+#logo {
+      width: 50px;
+      height: 50px;
+      margin-left: 100px;
+}
+  
+#pupAfRA {
+    color: #880000;
+    font-size: 1.4rem;
+    font-weight: 750;
+    margin-left: 15px;
+}
+/* End of header css */
+
+/* Start of title css */
+.title {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.title h2 {
+    font-size: 40px;
+    color: #0E0D0D;
+}
+/* End of title css */
+
+/* Start of form container css */
+.form-container {
+    max-width: 1200px;
+    max-height: 2200px;
+    margin: 20px auto;
+    padding: 20px;
+    padding-bottom: 60px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+/* End of form container css */
+
+
+/* Start of progress bar css */
+.progress-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 900px;
+    margin: 20px auto;
+}
+
+.step-button {
+    width: 40px;
+    height: 40px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.line {
+    border: 0;
+    background-color: #D9D9D9;
+    flex-grow: 5;
+    padding: 3px;
+    border-radius: 5px;
+    background:#5D0909;
+}
+
+.step-button:first-child, .step-button:nth-child(3), .step-button:nth-child(5), .step-button:nth-child(7){
+    background-color: #5D0909;
+}
+
+.step-text-container {
+    display: flex;
+    width: 980px;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+.step-text {
+    font-size: 13px;
+    font-weight: bold;
+    color: #555555;
+}
+
+.step-text:first-child {
+    margin-right: 40px;
+    margin-left: 15px;
+}
+
+.step-text:last-child {
+    margin-left: 10px;
+}
+/* End of progress bar css */
+
+/* Start of table css */
+.table-wrapper {
+    margin-top: 50px;
+    margin-left: 123px;
+}
+  
+table {
+    width: 965px;
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 15px;
+    border: 1.5px solid #555555; 
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+th, td {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1.5px solid #555555;
+}
+
+tr:last-child {
+    border: none;
+}
+
+th:first-child, td:first-child {
+    text-align: left;
+    padding-right: 4rem;
+}
+
+th {
+    color: #464040;
+    font-weight: bolder;
+}
+/* End of table css */
+
+/* Start of table button css */
+.upload-btn,
+.view-btn,
+.delete-btn {
+    border: none;
+}
+
+.upload-btn {
+    background-color: #DBE8DE;
+    color: #097152;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'montserrat', sans-serif;
+    cursor: pointer;
+    border-radius: 30px;
+    width: 5.5rem; 
+}
+
+.view-btn {
+    background-color: #D5DEE5;
+    color: #304674;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    margin-right: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'montserrat', sans-serif;
+    cursor: pointer;
+    width: 5.5rem;
+}
+
+.delete-btn {
+    background-color: #F3D1D1;
+    color: #B72F17;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 5.5rem;
+    border-radius: 30px;
+    font-family: 'montserrat', sans-serif;
+}
+/* End of table button css */
+
+/* Start of buttons container css */
+.buttons-container {
+    display: flex;
+    width: 62rem;
+    margin: 0 auto;
+}
+
+/* Start of next button css */
+.submit-button {
+    display: flex;
+    align-items: center;
+    background-color: #880000;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: 'monserrat', sans-serif;
+    padding: 10px 25px;
+    width: 100px;
+    margin-left: 76%;
+    margin-bottom: 50px;
+    border-radius: 30px 30px 30px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #B72F17;
+    color: #464040;
+}
+
+.submit-text {
+    margin-left: 3px;
+}
+/* End of next button css */
+
+/* Start of back button css */
+.back-button {
+    display: flex;
+    align-items: center;
+    background-color: #B3B3B3;
+    color: #464040;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: 'monserrat', sans-serif;
+    padding: 10px 25px;
+    width: 100px;
+    margin-bottom: 50px;
+    border-radius: 30px 30px 30px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #555555;
+    color: #fff;
+}
+
+.back-text {
+    margin-left: 10px;
+}
+
+.back-icon {
+    font-size: 30px;
+}
+/* End of back button css */
+/* End of buttons container css */
+
+/* Start of footer css */
+footer {
+    background-color: #5E0909;
+    font-size: 21px;
+    font-weight: 500;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7.5rem;
+}
+  
+.footer-left a, .footer-right a {
+    color: #ffffff;
+    text-decoration: none;
+}
+  
+.footer-left a:hover, .footer-right a:hover {
+    text-decoration: underline;
+}
+/* End of footer css */
