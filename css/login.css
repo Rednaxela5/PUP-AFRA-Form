@@ -205,25 +205,4 @@ footer {
 .footer-left a:hover, .footer-right a:hover {
     text-decoration: underline;
 }
-  
-#backToTopBtn {
-    position: fixed;
-    bottom: 20px; 
-    right: 20px;
-    cursor: pointer;
-    transition: bottom 0.3s ease;
-}
-  
-#backToTopBtn img {
-    width: 90px; 
-    height: 90px;
-}
-  
-#backToTopBtn:hover {
-    bottom: 30px;
-}
-  
-#backToTopBtn:hover img {
-    content: url(/assets/icons/hover-go-to-top_icon.png); 
-} 
 /* End of footer css */
