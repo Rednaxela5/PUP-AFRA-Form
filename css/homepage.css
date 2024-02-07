@@ -30,6 +30,7 @@ header {
   font-size: 1.4rem;
   font-weight: 750;
   margin-left: 15px;
+  text-decoration: none;
 }
 
 #applyNowButton {
