@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat', sans-serif;
+    background-color: #f4f6f9;
+}
+
+/* Start of header css */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    padding: 1rem 2rem;
+    z-index: 1000;
+}
+  
+#logo {
+      width: 50px;
+      height: 50px;
+      margin-left: 100px;
+}
+  
+#pupAfRA {
+    color: #880000;
+    font-size: 1.4rem;
+    font-weight: 750;
+    margin-left: 15px;
+    text-decoration: none;
+}
+/* End of header css */
+
+/* Start of form container css */
+.appStat-container {
+    max-width: 1200px;
+    height: 465px;
+    margin: 20px auto;
+    padding: 10px;
+    margin-bottom: 110px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    align-items: center;
+    text-align: left;
+}
+/* End of form container css */
+
+/* Start of title css */
+.title {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.title h2 {
+    font-size: 40px;
+    color: #0E0D0D;
+}
+/* End of title css */
+
+/* Start of text container css */
+#text-container {
+    padding-top: 40px;
+    padding-left: 55px;
+    color: #464040;
+    font-size: 23px;
+    font-weight: bold;
+    display: flex;
+}
+/* End of text container css */
+
+/* Start of table css */
+.table-wrapper {
+    margin-top: 30px;
+    margin-left: 50px;;
+}
+  
+table {
+    width: 1100px;
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 15px;
+    border: 1.5px solid #555555; 
+}
+
+td {
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1.5px solid #555555;
+    font-weight: bold;
+    color: #464040;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+td:first-child {
+    border-right: 1.5px solid #555555;
+    padding-left: 40px;
+    font-weight: bold;
+    color: #464040;
+}
+
+td:last-child {
+    padding: 35px;
+    width: 50%;
+    text-align: right;
+}
+/* End of table css */
+
+/* Start of footer css */
+footer {
+    background-color: #5E0909;
+    font-size: 21px;
+    font-weight: 500;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7.5rem;
+}
+  
+.footer-left a, .footer-right a {
+    color: #ffffff;
+    text-decoration: none;
+}
+  
+.footer-left a:hover, .footer-right a:hover {
+    text-decoration: underline;
+}
+/* End of footer css */
