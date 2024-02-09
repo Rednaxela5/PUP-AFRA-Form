@@ -13,8 +13,6 @@ nextButton.addEventListener('click', function() {
     }
 });
 
-
-
 function areAllFieldsFilledOut() {
     // Get references to the input fields
     const familyNameInput = document.getElementById('familyName');
@@ -34,7 +32,6 @@ function areAllFieldsFilledOut() {
     const reasonForStoppingArea = document.getElementById('reasonForStopping');
     const reasonForContinuingArea = document.getElementById('reasonForContinuing');
     
-
     // Check if the required fields have a non-empty value
     if (familyNameInput.value.trim() === '' || givenNameInput.value.trim() === '' || academicTermSelect.value.trim() === '' ||
         academicYear1Select.value.trim() === '' || academicYear2Select.value.trim() === '' || collegeDepartmentSelect.value.trim() === '' ||
