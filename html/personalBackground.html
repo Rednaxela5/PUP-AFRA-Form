@@ -36,7 +36,7 @@
     <div class="form-container">
         <!-- Progress bar starts here -->
         <div class="progress-bar-container">
-            <button class="step-button"></button>
+            <button class="step-button" id="applicantInfo-step-button"></button>
             <div class="line1"></div>
             <button class="step-button"></button>
             <div class="line2"></div>
@@ -58,9 +58,9 @@
             <!-- ROW 1 AND 2 -->
             <div class="name-section">
                 <div class="row1-text">Name</div>
-                <input type="text" id="familyName" name="familyName" placeholder="Family Name" class="rounded-input">
-                <input type="text" id="givenName" name="givenName" placeholder="Given Name" class="rounded-input">
-                <input type="text" id="middleName" name="middleName" placeholder="Middle Name" class="rounded-input">
+                <input type="text" id="personalfamilyName" name="familyName" placeholder="Family Name" class="rounded-input">
+                <input type="text" id="personalgivenName" name="givenName" placeholder="Given Name" class="rounded-input">
+                <input type="text" id="personalmiddleName" name="middleName" placeholder="Middle Name" class="rounded-input">
             </div>
 
             <div class="row3-text-container">
@@ -71,7 +71,7 @@
 
             <!-- ROW 4 -->
             <div class="row4-fields-container">
-                <select id = "sex">
+                <select id = "sex" required>
                     <option value="" disabled selected>Select</option>
                     <option value="1">Male</option>
                     <option value="2">Female</option>
@@ -361,9 +361,9 @@
 
     <div class="buttons-container">
         <!-- Back button -->
-        <div class="back-button">
+        <div class="back-button" id="back-button">
             <i class="fa-solid fa-arrow-left"></i>
-            <span class="back-text">Next</span>
+            <span class="back-text">Back</span>
         </div>
 
         <!-- Next button -->
@@ -389,6 +389,6 @@
     </footer>
 
     <script type="text/javascript" src="../js/appscript.js"></script>
-
+    <script type="text/javascript" src="../js/personalBackground.js"></script>
 </body>
 </html>

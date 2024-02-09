@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const studentNumberInput = document.getElementById('studentNumber');
     const passwordInput = document.getElementById('password');
     const togglePasswordButton = document.getElementById('togglePassword'); // Make sure this element exists
-
     const successMessage = document.getElementById('successMessage'); // Make sure this element exists
 
     loginForm.addEventListener('submit', function(event) {
