@@ -461,8 +461,7 @@ input[type="date"] { /* CSS for all the date*/
 }
 
 #courseEnrolled {
-    width: 19rem;
-    height: 25px;
+    width: 30rem;
     margin-top: 11px;
     font-family: 'montserrat', sans-serif;
     font-size: 20px; 
