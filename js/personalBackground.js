@@ -291,3 +291,17 @@ function toggleSameAddress() {
 
 }
 
+function toggleOthers() {
+    var livingWithWhom = document.getElementById('livingWithWhom').value;
+    var othersContainer = document.getElementById("othersContainer");
+
+    if (livingWithWhom === "Others") {
+        othersContainer.style.display = "block";
+    }
+    else {
+        othersContainer.style.display = "none";
+    }
+
+
+}
+
