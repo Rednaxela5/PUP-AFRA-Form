@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicant Information - PUP AFRA</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" type="text/css" href="../css/applicationForReAdmission.css">
+
+    <script src="https://kit.fontawesome.com/3c2f95c9a6.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+</head>
+
+<body>
+
+    <header>
+        <img id="logo" src="/assets/icons/PUPLogo.png" alt="PUP AFRA Logo">
+        <a href="../html/index.html" target="_blank" id="pupAfRA">PUP AFRA</a>
+
+       
+        <div class="icon-container">
+            <i class="fa-solid fa-circle-user fa-2x" style="color: #464040;" onmouseover="this.style.color='#D9D9D9';" onmouseout="this.style.color='#464040';"></i>
+            <i class="fa-solid fa-caret-down fa-xl" style="color: #464040;" onmouseover="this.style.color='#D9D9D9';" onmouseout="this.style.color='#464040';"></i>
+    
+            <div class="dropdown-content">
+                <a href="#">Settings</a>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+        
+    </header>
+
+
+    <div class="title">
+        <h2>APPLICATION FOR RE-ADMISSION</h2>
+    </div>
+
+
+    <div class="form-container">
+        <!-- Progress bar starts here -->
+        <div class="progress-bar-container">
+            <button class="step-button"></button>
+            <div class="line1"></div>
+            <button class="step-button" id="personal-background-step-button"></button>
+            <div class="line"></div>
+            <button class="step-button"></button>
+            <div class="line"></div>
+            <button class="step-button"></button>
+        </div>
+
+        <div class="step-text-container">
+            <div class="step-text">Applicant Info</div>
+            <div class="step-text">Personal Background</div>
+            <div class="step-text">Academic Background</div>
+            <div class="step-text">Upload Documents</div>
+        </div>
+        <!-- Progress bar ends here -->
+
+        <!-- form content goes here -->
+        <form id="reAdmissionForm" method="post" action="https://script.google.com/macros/s/AKfycbxsj0Zv34K4FsD2fSabqzu1-J_yU2jJQwqi8Yv4_E_PN3KqsnxPpDm8Wt1A94Yj4nom8A/exec">
+            <!-- ROW 1 AND 2 -->
+            <div class="name-section">
+                <h2>Name</h2>
+                <input type="text" id="familyName" name="FamilyName" placeholder="Family Name" class="rounded-input" required>
+                <input type="text" id="givenName" name="GivenName" placeholder="Given Name" class="rounded-input" required>
+                <input type="text" id="middleName" name="MiddleName" placeholder="Middle Name" class="rounded-input">
+            </div>
+
+           <!-- ROW 3 -->
+           <div class="row3-text-container">
+                <div class="row3-text">Academic Term</div>
+                <div class="row3-text">Academic Year</div>
+                <div class="row3-text">College Department</div>
+            </div>
+            
+            <!-- ROW 4 -->
+            <div class="row4-fields-container">
+                <select id = "academicTerm" name="AcademicTerm" required>
+                    <option value="" disabled selected>Select Academic Term</option>
+                    <option value="1">1st semester</option>
+                    <option value="2">2nd semester</option>
+                </select>
+
+                <select id="academicYear1" name="AcademicYear1 " required>
+                    <option value="" disabled selected>Select</option>
+                    <option value="2022">2024</option>
+                    <option value="2022">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2022">2021</option>
+                    <option value="2022">2020</option>
+                    <option value="2022">2019</option>
+                    <option value="2022">2018</option>
+                    <option value="2022">2017</option>
+                    <option value="2022">2016</option>
+                    <option value="2022">2015</option>
+                    <option value="2022">2014</option>
+                    <option value="2022">2013</option>
+                    <option value="2022">2012</option>
+                    <option value="2022">2011</option>
+                    <option value="2022">2010</option>
+                </select>
+                <span class="dash">-</span>
+                <select id="academicYear2" name="academicYear2" required>
+                    <option value="" disabled selected>Select</option>
+                    <option value="2022">2024</option>
+                    <option value="2022">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2022">2021</option>
+                    <option value="2022">2020</option>
+                    <option value="2022">2019</option>
+                    <option value="2022">2018</option>
+                    <option value="2022">2017</option>
+                    <option value="2022">2016</option>
+                    <option value="2022">2015</option>
+                    <option value="2022">2014</option>
+                    <option value="2022">2013</option>
+                    <option value="2022">2012</option>
+                    <option value="2022">2011</option>
+                    <option value="2022">2010</option>
+                </select>
+
+                <select id="collegeDepartment" name="CollegeDepartment" required>
+                    <option value="" disabled selected>Select College Department</option>
+                    <option value="CAF">College of Accountancy and Finance (CAF)</option>
+                    <option value="CADBE">College of Architecture, Design and the Built Environment (CADBE)</option>
+                    <option value="CAL">College of Arts and Letters (CAL)</option>
+                    <option value="CBA"> College of Business Administration (CBA)</option>
+                    <option value="COC">College of Communication (COC)</option>
+                    <option value="CCIS">College of Computer and Information Sciences (CCIS)</option>
+                    <option value="COED">College of Education (COED)</option>
+                    <option value="CE">College of Engineering (CE)</option>
+                    <option value="CHK">College of Human Kinetics (CHK)</option>
+                    <option value="CL">College of Law (CL)</option>
+                    <option value="CPSPA">College of Political Science and Public Administration (CPSPA)</option>
+                    <option value="CSSD">College of Social Sciences and Development (CSSD)</option>
+                    <option value="CS">College of Science (CS)</option>
+                    <option value="CTHTM">College of Tourism, Hospitality and Transportation Management (CTHTM)</option>
+                </select>
+            </div>
+           
+            <!-- ROW 5 -->
+            <div class="row5-text-container">
+                <div class="row5-text">Is this the first time you apply for Re-Admission?</div>
+                <div class="row5-text">If no, when was the first application</div>
+            </div>
+            
+            <!-- ROW 6 -->
+            <div class="row6-fields-container">
+                <select id = "firstTimeApply" class = "firstTimeApply"  name="FirstTimeApply" required>
+                    <option value="" disabled selected>Select</option>
+                    <option value="1">Yes</option>
+                    <option value="2">No</option>
+                </select>
+
+                <input type="date" id="FirstApplicationDate" name="firstApplicationDate">
+            </div>
+
+            <!-- ROW 7 -->
+            <div class="row7-text-container">
+                <div class="row7-text">Year Admitted in PUP</div>
+                <div class="row7-text">Admission Status</div>
+                <div class="row7-text">PUPCET Rating</div>
+                <div class="row7-text">H.S Average</div>
+            </div>
+
+            <!-- ROW 8 -->
+            <div class="row8-fields-container">     
+                <input type="date" id="yearAdmitted" name="YearAdmitted" required>
+                <select id = "admissionStatus" class = "admissionStatus" name="admissionStatus" required>
+                    <option value="" disabled selected>Select</option>
+                    <option value="Accepted">Accepted</option>
+                    <option value="Waitlisted">Waitlisted</option>
+                    <option value="Pending">Pending</option>
+                </select>
+
+                <input type="number" id="pupcetRating" name="PupcetRating" min="1" max="100" step=".1" required>
+                <input type="number" id="hsAverage" name="HsAverage" min="1" max="100" step=".1" required>
+            </div>
+
+            <!-- ROW 9 -->
+            <div class="row9-text-container">
+                <div class="row9-text">Course Enrolled in</div>
+                <div class="row9-text">Year Level</div>
+                <div class="row9-text">Total Units Earned in PUP</div>
+            </div>
+
+            <!-- ROW 10 -->
+            <div class="row10-fields-container">
+                <!-- <input type="text" id="courseEnrolled" name="CourseEnrolled"  class="rounded-input" required> -->
+                
+                <select id="courseEnrolled" class="courseEnrolled" name="CourseEnrolled" class="rounded-input" required>
+                    <option value="" disabled selected>Course</option>
+                    <option value="Bachelor in Library and Information Science">Bachelor in Library and Information Science (BLIS)</option>
+                    <option value="Bachelor of Arts in Philosophy">Bachelor of Arts in Philosophy (ABPHILO)</option>
+                    <option value="Bachelor of Arts in History">Bachelor of Arts in History (ABH)</option>
+                    <option value="Bachelor of Science in Architecture">Bachelor of Science in Architecture (BS ARCH)</option>
+                    <option value="Bachelor of Science in Interior Design">Bachelor of Science in Interior Design (BSID)</option>
+                    <option value="Bachelor of Science in Accountancy">Bachelor of Science in Accountancy (BSA)</option>
+                    <option value="Bachelor of Science in Business Administration major in Marketing Management">Bachelor of Science in Business Administration major in Marketing Management (BSBA-MM)</option>
+                    <option value="Bachelor of Science in Business Administration major in Human Resource Development Management">Bachelor of Science in Business Administration major in Human Resource Development Management (BSBA-HRDM)</option>
+                    <option value="Bachelor in Journalism">Bachelor in Journalism (BJ)</option>
+                    <option value="Bachelor of Science in Computer Science">Bachelor of Science in Computer Science (BSCS)</option>
+                    <option value="Bachelor of Science in Information Technology">Bachelor of Science in Information Technology (BSIT)</option>
+                    <option value="Bachelor of Science in Mechanical Engineering">Bachelor of Science in Mechanical Engineering (BSME)</option>
+                    <option value="Bachelor of Science in Civil Engineering">Bachelor of Science in Civil Engineering (BSCE)</option>
+                    <option value="Bachelor of Science in Electrical Engineering">Bachelor of Science in Electrical Engineering (BSEE)</option>
+                    <option value="Bachelor of Science in Industrial Engineering">Bachelor of Science in Industrial Engineering (BSIE)</option>
+                    <option value="Bachelor of Science in Electronics and Communications Engineering">Bachelor of Science in Electronics and Communications Engineering (BSECE)</option>
+                    <option value="Bachelor of Science in Computer Engineering">Bachelor of Science in Computer Engineering (BSCoE)</option>
+                    <option value="Bachelor of Science in Biology">Bachelor of Science in Biology (BSBIO)</option>
+                    <option value="Bachelor of Science in Nutrition and Dietetics">Bachelor of Science in Nutrition and Dietetics (BSND)</option>
+                    <option value="Bachelor of Science in Tourism Management">Bachelor of Science in Tourism Management (BSTM)</option>
+                    <option value="Bachelor of Science in Food Technology">Bachelor of Science in Food Technology (BSFT)</option>
+                    <option value="Bachelor of Science in Mathematics">Bachelor of Science in Mathematics (BSM)</option>
+                    <option value="Bachelor in Physical Education">Bachelor in Physical Education (BPE)</option>
+                    <option value="Bachelor of Arts in English">Bachelor of Arts in English (ABE)</option>
+                    <option value="Bachelor of Arts in Filipino">Bachelor of Arts in Filipino (ABF)</option>
+                    <option value="Bachelor of Science in Chemistry">Bachelor of Science in Chemistry (BSCHEM)</option>
+                    <option value="Bachelor of Science in Physics">Bachelor of Science in Physics (BSP)</option>
+                    <option value="Bachelor in Office Administration">Bachelor in Office Administration (BOA)</option>
+                    <option value="Bachelor of Science in Entrepreneurial Management">Bachelor of Science in Entrepreneurial Management (BSEM)</option>
+                    <option value="Bachelor in Advertising and Public Relation">Bachelor in Advertising and Public Relation (BAPR)</option>
+                    <option value="Bachelor in Communication Research">Bachelor in Communication Research (BCR)</option>
+                    <option value="Bachelor in Cooperative">Bachelor in Cooperative (BC)</option>
+                    <option value="Bachelor in Applied Statistics">Bachelor in Applied Statistics (BAS)</option>
+                    <option value="Bachelor of Science in Railway Engineering and Management">Bachelor of Science in Railway Engineering and Management (BSREM)</option>
+                    <option value="Bachelor on Broadcast Communication">Bachelor on Broadcast Communication (BBRC)</option>
+                    <option value="Bachelor of Science in Industrial & Organizational Psychology">Bachelor of Science in Industrial & Organizational Psychology (BSIOP)</option>
+                    <option value="Bachelor of Science in Clinical Psychology">Bachelor of Science in Clinical Psychology (BSCP)</option>
+                    <option value="Bachelor of Arts in Theater Arts">Bachelor of Arts in Theater Arts (ABTA)</option>
+                    <option value="Bachelor of Science in Transportation Management">Bachelor of Science in Transportation Management (BTM)</option>
+                    <option value="Bachelor of Science in Hospitality Management">Bachelor of Science in Hospitality Management (BHM)</option>
+                </select>
+                
+                <select id = "yearLevel" class = "yearLevel" name="YearLevel" required>
+                    <option value="" disabled selected>Select Year Level</option>
+                    <option value="1">First Year</option>
+                    <option value="2">Second Year</option>
+                    <option value="2">Third Year</option>
+                    <option value="2">Fourth Year</option>
+                </select>
+
+                <input type="number" id="unitsEarned" name="UnitsEarned" min="1" max="100" step="1" required>
+            </div>
+
+            <!-- ROW 11 -->
+            <div class="row11-text-container">
+                <div class="row11-text">Reason for Stopping</div>
+            </div>
+
+            <!-- ROW 12 -->
+            <div class="row12-fields-container">
+                <textarea id="reasonForStopping" name="ReasonForStopping" required></textarea>
+            </div>
+
+            <!-- ROW 13 -->
+            <div class="row13-text-container">
+                <div class="row13-text">Reason/s for Continuing my Studies</div>
+            </div>
+
+            <!-- ROW 14 -->
+            <div class="row14-fields-container">
+                <textarea id="reasonForContinuing" name="ReasonForContinuing" required></textarea>
+            </div>
+        </form>
+    </div>
+
+    <div class="next-button" id="nextButton">
+        <i class="fa-solid fa-arrow-right"></i>
+        <span class="text">Next</span>
+    </div>
+
+
+    <div id="backToTopBtn">
+        <img src="/assets/icons/go-to-top_icon.png" alt="Back to Top">
+    </div>
+
+    <footer>
+        <div class="footer-left">
+          <a href="https://www.pup.edu.ph/terms/" target="_blank">Terms of Use</a> | <a href="https://www.pup.edu.ph/privacy/" target="_blank">Privacy Statement</a>
+        </div>
+        <div class="footer-center">
+          © 2023 PUP AFRA
+        </div>
+        <div class="footer-right">
+          <a href="#">About</a> | <a href="https://www.pup.edu.ph/about/contactus" target="_blank">Contact</a> | Version 1.0
+    </footer>
+
+    <script type="text/javascript" src="../js/appscript.js"></script>
+    <script type="text/javascript" src="../js/progressBar.js"></script>
+    <script type="text/javascript" src="../js/applicationForReAdmission.js"></script>
+
+</body>
+</html>

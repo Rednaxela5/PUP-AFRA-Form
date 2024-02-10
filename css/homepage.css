@@ -4,7 +4,8 @@ body {
   font-family: 'montserrat', sans-serif;
   background-color: #f4f6f9;
 }
-/*header css*/
+
+/* Header css */
 header {
   position: fixed;
   top: 0;
@@ -28,8 +29,8 @@ header {
   color: #880000;
   font-size: 1.4rem;
   font-weight: 750;
-  font-family: 'montserrat', sans-serif;
   margin-left: 15px;
+  text-decoration: none;
 }
 
 #applyNowButton {
@@ -46,9 +47,9 @@ header {
   margin-left: 57%;
   font-family: 'montserrat', sans-serif;
 }
-/*end of header css*/
+/* End of header css*/
 
-/*top homepage css*/
+/* Top homepage css*/
 .home-page {
   position: relative;
   height: 100vh; 
@@ -84,9 +85,9 @@ header {
   margin-top: -10px;
   z-index: 1;
 }
-/*end of top homepage css*/
+/* End of top homepage css */
 
-/*homepage text content css*/
+/* Homepage text content css */
 .home-page-content {
   padding: 140px;
 }
@@ -94,7 +95,6 @@ header {
 .hp-text-content .RS-title {
   font-size: 33px;
   font-weight: 700;
-  font-family: 'montserrat', sans-serif; 
   color: #800000; 
   z-index: 1;
 }
@@ -102,7 +102,6 @@ header {
 .hp-text-content .title {
   font-size: 28px;
   font-weight: 500px;
-  font-family: 'montserrat', sans-serif; 
   color: #800000; 
   z-index: 1;
 }
@@ -110,26 +109,24 @@ header {
 .hp-text-content .RS-subtext, .DTS-list {
   font-size: 25px;
   font-weight: medium;
-  font-family: 'montserrat', sans-serif;
   color: #555555; 
   line-height: 1.9;
   z-index: 1;
 }
 
-/*university calendar hyperlink*/
+/* University calendar hyperlink */
 .RS-subtext a {
   color: inherit; 
   text-decoration: underline; 
   cursor: pointer;
 }
-/*end of homepage text content css*/
+/* End of homepage text content css */
 
-/*start of footer css*/
+/* Start of footer css*/
 footer {
   background-color: #5E0909;
   font-size: 21px;
   font-weight: 500;
-  font-family: 'montserrat', sans-serif;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
@@ -148,12 +145,14 @@ footer {
 }
 
 #backToTopBtn {
+  display: none;
   position: fixed;
   bottom: 20px; 
   right: 20px;
   cursor: pointer;
   transition: bottom 0.3s ease;
 }
+
 
 #backToTopBtn img {
   width: 90px; 
@@ -165,7 +164,24 @@ footer {
 }
 
 #backToTopBtn:hover img {
-  content: url(hover-go-to-top_icon.png); 
+  content: url(/assets/icons/hover-go-to-top_icon.png); 
 }
 
-/*end of footer css */
+/* End of footer css */
+
+
+
+/* Define the fade-out animation with a duration of 0.5 seconds */
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+}
+
+/* Apply the fade-out animation to the body */
+.fadeOut {
+  animation: fadeOut 0.5s ease;
+}

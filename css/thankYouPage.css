@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat', sans-serif;
+    background-color: #f4f6f9;
+}
+
+/* Start of header css */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    padding: 1rem 2rem;
+    z-index: 1000;
+    justify-content: space-between;
+    padding-right: 155px;
+}
+  
+#logo {
+      width: 50px;
+      height: 50px;
+      margin-left: 100px;
+}
+
+#pupAfRA {
+    color: #880000;
+    font-size: 1.4rem;
+    font-weight: 750;
+    margin-right: 665px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+/* End of header css */
+
+/* start of Application Status css */
+#applicationStatusHeader {
+    font-size: 25px;
+    color: #282424;
+    padding-left: 30px;
+}
+
+#applicationStatusHeader:hover {
+    color: #880000;
+    cursor: pointer;
+}
+/* End of application status css */
+
+/* Start of Dropdown container styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 120px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 120px;
+}
+
+.dropdown-content a:last-child {
+    color: #ff6b6b;
+}
+
+.dropdown-content a:first-child:hover {
+    background-color: #555;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+}
+
+.dropdown-content a:nth-child(2):hover {
+    background-color: #555;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; 
+}
+
+.icon-container i:nth-child(2):hover + .dropdown-content,
+.dropdown-content:hover {
+    display: block;
+    opacity: 1;
+}
+
+.icon-container {
+    display: flex;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.icon-container i:nth-child(2) {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+/* End of dropdown container css */
+
+/* Start of form container css */
+.form-container {
+    max-width: 1200px;
+    height: 510px;
+    margin: 20px auto;
+    padding: 10px;
+    margin-bottom: 80px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    margin-top: 150px;
+    align-items: center;
+    text-align: center;
+}
+/* End of form container css */
+
+/* Start of thank you container css */
+
+#check-icon-container {
+    position: relative;
+    top: 1%; 
+}
+
+#check-icon-container i {
+    position: absolute;
+    
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+#text-container {
+    padding: 50px;
+}
+
+.title {
+    font-size: 23px;
+    color: #464040;
+    font-weight: bolder;
+}
+
+p {
+    font-size: 26px;
+    color: #282424;
+}
+
+.content p:first-child, .content p:nth-child(2) {
+    margin-bottom: 60px; 
+}
+
+.content p:nth-child(3) {
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.contactUs {
+    color: #2D72C3;
+    text-decoration: none;
+}
+
+#view-statusBTN {
+    background-color: #880000;
+    color: #ffffff;
+    padding: 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 19rem;
+    margin-left: 20px;
+    font-family: 'montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -30px;
+}
+/* End of thank you container css */
+
+/* Start of footer css */
+footer {
+    background-color: #5E0909;
+    font-size: 21px;
+    font-weight: 500;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7.5rem;
+}
+  
+.footer-left a, .footer-right a {
+    color: #ffffff;
+    text-decoration: none;
+}
+  
+.footer-left a:hover, .footer-right a:hover {
+    text-decoration: underline;
+}
+/* End of footer css */

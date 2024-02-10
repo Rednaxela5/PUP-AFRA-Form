@@ -1,0 +1,664 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat', sans-serif;
+    background-color: #f4f6f9;
+}
+
+/* Start of header css */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    padding: 1rem 2rem;
+    z-index: 1000;
+    justify-content: space-between;
+    padding-right: 155px;
+}
+  
+#logo {
+      width: 50px;
+      height: 50px;
+      margin-left: 100px;
+}
+  
+#pupAfRA {
+    color: #880000;
+    font-size: 1.4rem;
+    font-weight: 750;
+    margin-right: 920px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+/* End of header css */
+
+/* Start of Dropdown container styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 120px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 120px;
+}
+
+.dropdown-content a:last-child {
+    color: #ff6b6b;
+}
+
+.dropdown-content a:first-child:hover {
+    background-color: #555;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+}
+
+.dropdown-content a:nth-child(2):hover {
+    background-color: #555;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; 
+}
+
+.icon-container i:nth-child(2):hover + .dropdown-content,
+.dropdown-content:hover {
+    display: block;
+    opacity: 1;
+}
+
+.icon-container {
+    display: flex;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.icon-container i:nth-child(2) {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+/* End of dropdown container css */
+
+
+/* Start of title css */
+.title {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.title h2 {
+    font-size: 40px;
+    color: #0E0D0D;
+}
+/* End of title css */
+
+/* Start of form container css */
+.form-container {
+    max-width: 1200px;
+    max-height: 2200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+/* End of form container css */
+
+
+/* Start of progress bar css */
+.progress-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 900px;
+    margin: 20px auto;
+}
+
+.step-button {
+    width: 40px;
+    height: 40px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.line {
+    border: 0;
+    background-color: #D9D9D9;
+    flex-grow: 5;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.line1 {
+    border: 0;
+    background-color: #D9D9D9;
+    flex-grow: 5;
+    padding: 3px;
+    border-radius: 5px;
+    background:#5D0909;
+}
+
+.line2 {
+    border: 0;
+    background-color: #D9D9D9;
+    flex-grow: 5;
+    padding: 3px;
+    border-radius: 5px;
+    background:#5D0909;
+}
+
+.line3 {
+    border: 0;
+    background-color: #D9D9D9;
+    flex-grow: 5;
+    padding: 3px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #5D0909 50%, #D9D9D9 50%)
+}
+
+.step-button:first-child, .step-button:nth-child(3), .step-button:nth-child(5){
+    background-color: #5D0909;
+}
+
+.step-text-container {
+    display: flex;
+    width: 980px;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+.step-text {
+    font-size: 13px;
+    font-weight: bold;
+    color: #555555;
+}
+
+.step-text:first-child {
+    margin-right: 40px;
+    margin-left: 15px;
+}
+
+.step-text:last-child {
+    margin-left: 10px;
+}
+/* End of progress bar css */
+
+/* row1 css */
+.row1-text, .row3-text, .row5-text, .row7-text, .row9-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #464040;
+    padding: 40px 0 5px 0;
+    display: flex;
+    width: 950px; 
+    justify-content: space-between;
+    margin: 10px auto;
+    text-align: left;
+}
+/* end of row1 css */
+
+/* Start of row2 css */
+.row2-fields-container {
+    margin-left: 123px;
+}
+
+#courseBeforeDropped {
+    width: 18rem;
+}
+
+#yearLevel-AB {
+    width: 14.5rem;
+}
+/* End of row2 css */
+
+/* Start of input fields css */
+.input-fields {
+    display: flex;
+}
+
+.rounded-input {
+    border: 1.5px solid #555555;
+    border-radius: 10px;
+    padding: 15px;
+    margin-right: 10px;
+    width: 14rem;
+    font-family: 'montserrat', sans-serif;
+    font-size: 20px; 
+}
+
+.rounded-input::placeholder {
+    font-family: 'montserrat', sans-serif;
+    font-size: 20px; 
+    color: #888888; 
+}
+/* End of input fields css */
+
+/* Start of select css */
+select {
+    border: 1.5px solid #555555;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #888888;
+}
+
+select option {
+    font-family: 'montserrat', sans-serif;
+    font-size: 20px;   
+    color: #0E0D0D;
+}
+
+select option:disabled {
+    color:#fff;
+    background-color: #D9D9D9;
+}
+
+/* End of select css */
+
+/* Start of checkbox css */
+input[type="checkbox"] {
+    border: 2px solid #555555;
+    width: 20px;
+    height: 20px; 
+    border-radius: 3px;
+    margin-right: 7px;
+    
+    position: relative;
+    top: 3px;
+}
+/* End of checkbox css */
+
+/* Start of row3 css */
+.row3-text, .row5-text, .row7-text, .row9-text, .row11-text, .row13-text, 
+.row15-text, .row17-text, .row19-text, .row21-text, .row23-text, .row25-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #464040;
+    padding: 15px 0 5px 0;
+    display: flex;
+    width: 950px; 
+    justify-content: space-between;
+    margin: 10px auto;
+    text-align: left;
+}
+/* End of row3 css */
+
+/* Start of row4 css */
+.row4-1-fields-container, .row4-2-fields-container {
+    width: 985px; 
+    margin-left: 125px;
+    padding-bottom: 8px;
+}
+
+#economicLabel {
+    padding-right: 12rem;
+}
+
+#empOpportunityLabel {
+    padding-right: 4rem;
+}
+/* End of row4 css */
+
+
+
+/* Start of radio button css */
+input[type="radio"] {
+    border: 2px solid #555555;
+    width: 20px;
+    height: 20px; 
+    border-radius: 3px;
+    margin-right: 7px;
+    
+    position: relative;
+    top: 3px;
+}
+
+.row6-1-fields-container, .row6-2-fields-container {
+    width: 985px; 
+    margin-left: 125px;
+    padding-bottom: 8px;
+}
+/* End of radio button css */
+
+/* Start of row8 css */
+.row8-1-fields-container, .row8-2-fields-container, .row8-3-fields-container {
+    width: 985px; 
+    margin-left: 125px;
+    padding-bottom: 8px;
+}
+
+#selfImprovementLabel {
+    padding-right: 6rem;
+}
+
+#finishAndObtainDegreeLabel {
+    padding-right: 2.3rem;
+}
+
+#otherInitialPurposeLabel {
+    padding-right: 6.1rem;
+}
+
+#otherInitialPurposeText {
+    display: none;
+    height: 5px;
+    width: 14rem;
+    border-radius: 7px;
+}
+/* End of row8 css */
+
+/* Start of row10 css */
+.row10-fields-container {
+    width: 985px; 
+    margin-left: 117px;
+    padding-bottom: 8px;
+}
+/* End of row10 css */
+
+/* Start of row12 css */
+.row12-1-fields-container, .row12-2-fields-container {
+    width: 985px; 
+    margin-left: 125px;
+    padding-bottom: 8px;
+}
+/* End of radio button css */
+
+/* Start of row14 css */
+.row14-1-fields-container, .row14-2-fields-container, .row14-3-fields-container {
+    width: 985px; 
+    margin-left: 125px;
+    padding-bottom: 8px;
+}
+
+#financeProbLabel {
+    padding-right: 7rem;
+}
+
+#jobPlacementLabel{
+    padding-right: 8.6rem;
+}
+
+#otherReasonDropLabel {
+    padding-right: 5.4rem;
+}
+
+/* End of row14 css */
+
+/* Start of row16 css */
+.row16-fields-container {
+    width: 985px; 
+    margin-left: 117px;
+    padding-bottom: 8px;
+}
+
+#gradePointAve{
+    width: 14rem;
+}
+/* End of row16 css */
+
+
+/* Start of row18 css */
+.row18-fields-container {
+    width: 985px; 
+    margin-left: 120px;
+    padding-top: 8px;
+}
+
+#problemEncountered {
+    border: 1.5px solid #555555;
+    border-radius: 10px;
+    margin-right: 20px;
+    width: 44.8rem;
+    height: 6rem;
+    font-family: 'montserrat', sans-serif;
+    font-size: 20px; 
+}
+/* End of row18 css */
+
+/* Start of row19 css */
+.row19-text-container {
+    display: flex;
+    width: 950px; 
+    justify-content: space-between;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.row19-text:last-child {
+    font-size: 20px;
+    font-weight: bold;
+    color: #9A3030;
+}
+/* End of row19 css */
+
+/* Start of row20 css */
+.row20-fields-container {
+    display: flex;
+    width: 985px; 
+    margin-left: 117px;
+    padding-bottom: 8px;
+}
+
+.row20-radio-container {
+    flex-direction: column;
+    margin-left: 6px;
+}
+
+.row20-1-fields-container,
+.row20-2-fields-container {
+    width: 200px;
+    margin-bottom: 8px;
+}
+
+.row20-select-container {
+    flex-grow: 1;
+}
+
+#weeklyHrsStudSelect {
+    width: 15rem;
+    margin-left: 13.8rem;
+}
+/* End of row20 css */
+
+/* Start of row22 css */
+.row22-1-fields-container, .row22-2-fields-container {
+    width: 985px; 
+    margin-left: 127px;
+}           
+
+.row22-1-text {
+    margin-right: 8rem;
+}
+
+#facultyFavorableLabel {
+    padding-right: 2rem;
+}
+
+.row22-2-text {
+    margin-right: 5.7rem;
+}
+
+#classmateFavorableLabel {
+    padding-right: 2rem;
+}
+/* End of row22 css */
+
+/* Start of row24 css */
+.row24-1-fields-container, .row24-2-fields-container {
+    width: 985px; 
+    margin-left: 125px;
+    padding-bottom: 8px;
+}
+
+#forPromotionLabel {
+    padding-right: 9rem;
+}
+
+#forPrestigeLabel {
+    padding-right: 10.3rem;
+}
+/* End of row4 css */
+
+/* Start of row26 css */
+.row26-1-fields-container, .row26-2-fields-container {
+    width: 985px; 
+    margin-left: 125px;
+    padding-bottom: 8px;
+}
+
+.row26-2-fields-container {
+    padding-bottom: 40px;
+}
+
+#finishCourseLabel {
+    padding-right: 2rem;
+}
+
+#shiftOtherSchoolLabel {
+    padding-right: 4.9rem;
+}
+
+#otherSpecifyUponReturnLabel {
+    padding-right: 20px;
+}
+
+#otherintendsText {
+    height: 5px;
+    width: 11rem;
+    
+}
+/* End of row4 css */
+
+/* Start of buttons container css */
+.buttons-container {
+    display: flex;
+    width: 62rem;
+    margin: 0 auto;
+}
+
+/* Start of next button css */
+.next-button {
+    display: flex;
+    align-items: center;
+    background-color: #880000;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: 'monserrat', sans-serif;
+    padding: 10px 25px;
+    width: 100px;
+    margin-left: 76%;
+    margin-bottom: 50px;
+    border-radius: 30px 30px 30px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.next-button:hover {
+    background-color: #555555;
+}
+
+.next-text {
+    margin-left: 10px;
+}
+
+.next-icon {
+    font-size: 30px;
+}
+/* End of next button css */
+
+/* Start of back button css */
+.back-button {
+    display: flex;
+    align-items: center;
+    background-color: #B3B3B3;
+    color: #464040;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: 'monserrat', sans-serif;
+    padding: 10px 25px;
+    width: 100px;
+    margin-bottom: 50px;
+    border-radius: 30px 30px 30px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #B72F17;
+    color: #fff;
+}
+
+.back-text {
+    margin-left: 10px;
+}
+
+.back-icon {
+    font-size: 30px;
+}
+/* End of back button css */
+/* End of buttons container css */
+
+/* Start of footer css */
+footer {
+    background-color: #5E0909;
+    font-size: 21px;
+    font-weight: 500;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7.5rem;
+}
+  
+.footer-left a, .footer-right a {
+    color: #ffffff;
+    text-decoration: none;
+}
+  
+.footer-left a:hover, .footer-right a:hover {
+    text-decoration: underline;
+}
+  
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;
+    cursor: pointer;
+    transition: bottom 0.3s ease;
+}
+  
+#backToTopBtn img {
+    width: 90px; 
+    height: 90px;
+}
+  
+#backToTopBtn:hover {
+    bottom: 30px;
+}
+  
+#backToTopBtn:hover img {
+    content: url(/assets/icons/hover-go-to-top_icon.png); 
+} 
+/* End of footer css */

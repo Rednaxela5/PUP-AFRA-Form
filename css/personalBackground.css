@@ -18,6 +18,8 @@ header {
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
     padding: 1rem 2rem;
     z-index: 1000;
+    justify-content: space-between;
+    padding-right: 155px;
 }
   
 #logo {
@@ -30,17 +32,76 @@ header {
     color: #880000;
     font-size: 1.4rem;
     font-weight: 750;
-    font-family: 'montserrat', sans-serif;
-    margin-left: 15px;
+    margin-right: 920px;
+    margin-left: 10px;
+    text-decoration: none;
 }
 /* End of header css */
+
+/* Start of Dropdown container styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 120px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 120px;
+}
+
+.dropdown-content a:last-child {
+    color: #ff6b6b;
+}
+
+.dropdown-content a:first-child:hover {
+    background-color: #555;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+}
+
+.dropdown-content a:nth-child(2):hover {
+    background-color: #555;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; 
+}
+
+.icon-container i:nth-child(2):hover + .dropdown-content,
+.dropdown-content:hover {
+    display: block;
+    opacity: 1;
+}
+
+.icon-container {
+    display: flex;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.icon-container i:nth-child(2) {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+/* End of dropdown container css */
+
 
 /* Start of footer css */
 footer {
     background-color: #5E0909;
     font-size: 21px;
     font-weight: 500;
-    font-family: 'montserrat', sans-serif;
     color: #ffffff;
     display: flex;
     justify-content: space-between;
@@ -75,7 +136,7 @@ footer {
 }
   
 #backToTopBtn:hover img {
-    content: url(hover-go-to-top_icon.png); 
+    content: url(/assets/icons/hover-go-to-top_icon.png); 
 } 
 /* End of footer css */
 
@@ -187,10 +248,10 @@ footer {
     font-size: 20px;
     font-weight: bold;
     color: #464040;
-    padding-bottom: 15px;
-    padding-left: 5px;
+    padding: 17px 0 15px 5px;
 }
 
+/* Start of input fields css */
 .input-fields {
     display: flex;
 }
@@ -210,6 +271,7 @@ footer {
     font-size: 20px; 
     color: #888888; 
 }
+/* End of input fields css */
 /* end of row 1 and row 2*/
 
 /* row 3 */
@@ -246,16 +308,6 @@ footer {
     padding-bottom: 5px;
 }
 
-select {
-    border: 1.5px solid #555555;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 8px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    color: #888888;
-}
-
 #sex {
     width: 14rem;
 }
@@ -266,6 +318,18 @@ select {
 
 #civilStatus {
     width: 18.5rem;
+}
+/* end row 4 */
+
+/* Start of select css */
+select {
+    border: 1.5px solid #555555;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #888888;
 }
 
 select option {
@@ -278,7 +342,7 @@ select option:disabled {
     color:#fff;
     background-color: #D9D9D9;
 }
-/* end row 4 */
+/* End of select css */
 
 /* row 5 */
 .row5-text-container {
@@ -356,14 +420,14 @@ select option:disabled {
 /* row 8 */
 .row8-fields-container {
     display: flex;
-    width: 985px; 
+    width: 980px; 
     justify-content: space-between;
-    margin-left: 110px;
+    margin-left: 117px;
     text-align: left;
 }
 
 #region, #province {
-    width: 50rem;
+    width: 22.3rem;
 }
 /* end of row 8 */
 
@@ -391,14 +455,14 @@ select option:disabled {
 /* row 10 */
 .row10-fields-container {
     display: flex;
-    width: 985px; 
+    width: 980px; 
     justify-content: space-between;
-    margin-left: 110px;
+    margin-left: 117px;
     text-align: left;
 }
 
 #city, #barangay {
-    width: 50rem;
+    width: 22.3rem;
 }
 /* end of row 10 */
 
@@ -427,9 +491,9 @@ select option:disabled {
 /* row 12 */
 .row12-fields-container {
     display: flex;
-    width: 976px; 
+    width: 979px; 
     justify-content: space-between;
-    margin-left: 120px;
+    margin-left: 117px;
     text-align: left;
 }
 
@@ -438,7 +502,7 @@ select option:disabled {
 }
 
 #postalCode {
-    width: 11.8rem;
+    width: 12rem;
 }
 /* end of row 12 */
 
@@ -453,9 +517,13 @@ select option:disabled {
 
 .row13-sameAddress input[type="checkbox"] {
     border: 2px solid #555555;
-    width: 17px; /* Adjust the width */
-    height: 17px; /* Adjust the height */
-    border-radius: 3px; /* Adjust the border radius to make it square */
+    width: 20px;
+    height: 20px; 
+    border-radius: 3px;
+    
+    /* Adjust the position as needed */
+    position: relative;
+    top: 3px;
 }
 
 .main-text {
@@ -483,14 +551,14 @@ select option:disabled {
 /* row 14 */
 .row14-fields-container {
     display: flex;
-    width: 985px; 
+    width: 980px; 
     justify-content: space-between;
-    margin-left: 110px;
+    margin-left: 117px;
     text-align: left;
 }
 
-#region2, #province2 {
-    width: 50rem;
+#provRegion, #provProvince {
+    width: 22.3rem;
 }
 /* end of row 14 */
 
@@ -518,14 +586,14 @@ select option:disabled {
 /* row 16 */
 .row16-fields-container {
     display: flex;
-    width: 985px; 
+    width: 980px; 
     justify-content: space-between;
-    margin-left: 110px;
+    margin-left: 117px;
     text-align: left;
 }
 
-#city2, #barangay2 {
-    width: 50rem;
+#provCity, #provBarangay {
+    width: 22.3rem;
 }
 /* end of row 16 */
 
@@ -554,18 +622,18 @@ select option:disabled {
 /* row 18 */
 .row18-fields-container {
     display: flex;
-    width: 976px; 
+    width: 980px; 
     justify-content: space-between;
-    margin-left: 120px;
+    margin-left: 117px;
     text-align: left;
 }
 
-#streetName2{
+#provStreetName {
     width: 32.6rem;
 }
 
-#postalCode2 {
-    width: 11.8rem;
+#provPostalCode {
+    width: 12rem;
 }
 /* end of row 18 */
 
@@ -599,13 +667,14 @@ select option:disabled {
     text-align: left;
 }
 
-#academicTerm {
+#academicTermAdmission {
     width: 25rem;
 }
 
-#academicYear1, #academicYear2 {
+#academicYearAdmission1, #academicYearAdmission2 {
     width: 12rem;
 }
+
 .dash {
     font-size: 15px;
     font-weight: bolder;
@@ -642,11 +711,11 @@ select option:disabled {
     text-align: left;
 }
 
-#academicTerm {
+#academicYearDropped {
     width: 25rem;
 }
 
-#academicYear2-1, #academicYear2-2 {
+#academicYearDropped1, #academicYearDropped2 {
     width: 12rem;
 }
 .dash {
@@ -714,7 +783,7 @@ select option:disabled {
 }
 
 .next-button:hover {
-    background-color: #555555;
+    background-color: #B72F17;
 }
 
 .next-text {
@@ -757,3 +826,26 @@ select option:disabled {
 }
 /* End of back button css */
 /* End of buttons container css */
+
+
+
+#othersContainer{
+    width: 990px; 
+    justify-content: space-between;
+    margin-left: 125px;
+    text-align: left;
+    font-weight: bold;
+    color: #464040;
+    padding-bottom: 80px;
+}
+
+#otherSpecify {
+    border: 1.5px solid #555555;
+    border-radius: 10px;
+    padding: 15px;
+    width: 38.2rem;
+    font-family: 'montserrat', sans-serif;
+    font-size: 20px; 
+    margin-top: -75px;
+    
+}

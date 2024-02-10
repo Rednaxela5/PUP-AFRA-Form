@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - PUP AFRA</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+
+    <script src="https://kit.fontawesome.com/3c2f95c9a6.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+</head>
+
+<body>
+
+    <header>
+        <img id="logo" src="/assets/icons/PUPLogo.png" alt="PUP AFRA Logo">
+        <a href="../html/index.html" target="_blank"    id="pupAfRA">PUP AFRA</a>
+    </header>
+
+    <div class="title">
+        <h2>LOGIN</h2>
+    </div>
+    
+    <div class="blur-overlay"></div>
+    <form id="loginForm" method="post">
+        <div class="login-container">
+            <div id="login-guide-text-container">
+                <label id="login-guide-text">Type your SIS credentials</label>
+            </div>
+            <div class="login-form">
+                <div class="username">
+                    <label id="username-label" for="studentNumber">Student Number</label>
+                    <input id="studentNumber" type="text" placeholder="202X-XXXXX-MN-0" name="StudentNumber" required/>
+                </div>
+                <div class="password">
+                    <label id="password-label" for="password">Password</label>
+                        <div class="password-input-wrapper">
+                            <div class="password-input-wrapper">
+                                <input id="password" type="password" placeholder="Password" name="Password" required />
+                                <i class='fas fa-eye-slash' id="togglePassword"></i> 
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="login-footer">
+                <input type="checkbox" checked="checked" name="remember" id="rememberMe">
+                <label for="remember">Keep me logged in</label>
+                <label for="forgot-password" id="forgotPassword"><a href="forget-password.html">Forgot password?</a></label>
+            </div>
+
+            
+            <div class="login-button">
+                <button id="loginBTN" type="submit" >Login</button>
+            </div>
+        </div>
+    </form>
+    <footer>
+        <div class="footer-left">
+          <a href="https://www.pup.edu.ph/terms/" target="_blank">Terms of Use</a> | <a href="https://www.pup.edu.ph/privacy/" target="_blank">Privacy Statement</a>
+        </div>
+        <div class="footer-center">
+          © 2023 PUP AFRA
+        </div>
+        <div class="footer-right">
+          <a href="#">About</a> | <a href="https://www.pup.edu.ph/about/contactus" target="_blank">Contact</a> | Version 1.0
+    </footer>
+
+    <script type="text/javascript" src="../js/login.js"></script>
+
+</body>
+</html>

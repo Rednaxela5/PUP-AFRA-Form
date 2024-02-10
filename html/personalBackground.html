@@ -4,16 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PUP AFRA</title>
+    <title>Personal Background - PUP AFRA</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
-    <link rel="stylesheet" href="personalBackground.css">
+    <link rel="stylesheet" type="text/css" href="../css/personalBackground.css">
+
+    <script src="https://kit.fontawesome.com/3c2f95c9a6.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
 </head>
 
 <body>
 
     <header>
-        <img id="logo" src="PUPLogo.png" alt="PUP AFRA Logo">
-        <div id="pupAfRA">PUP AFRA</div>
+        <img id="logo" src="/assets/icons/PUPLogo.png" alt="PUP AFRA Logo">
+        <a href="../html/index.html" target="_blank" id="pupAfRA">PUP AFRA</a>
+
+        <div class="icon-container">
+            <i class="fa-solid fa-circle-user fa-2x" style="color: #464040;" onmouseover="this.style.color='#D9D9D9';" onmouseout="this.style.color='#464040';"></i>
+            <i class="fa-solid fa-caret-down fa-xl" style="color: #464040;" onmouseover="this.style.color='#D9D9D9';" onmouseout="this.style.color='#464040';"></i>
+    
+            <div class="dropdown-content">
+                <a href="#">Settings</a>
+                <a href="#">Logout</a>
+            </div>
+        </div>
     </header>
 
     <div class="title">
@@ -24,12 +38,11 @@
     <div class="form-container">
         <!-- Progress bar starts here -->
         <div class="progress-bar-container">
-            <button class="step-button"></button>
+            <button class="step-button" id="applicantInfo-step-button"></button>
             <div class="line1"></div>
             <button class="step-button"></button>
-            <!-- turn the next line into line 2 and then turn line1 to line if nasa next page na :) ps. pwede siyang pseudo but ayaw kasi gumana sa end ko huhu-->
             <div class="line2"></div>
-            <button class="step-button"></button>
+            <button class="step-button" id="academic-background-step-button"></button>
             <div class="line"></div>
             <button class="step-button"></button>
         </div>
@@ -43,13 +56,13 @@
         <!-- Progress bar ends here -->
 
         <!-- form content goes here -->
-        <form id="reAdmissionForm">
+        <form id="personalBackgroundForm">
             <!-- ROW 1 AND 2 -->
             <div class="name-section">
                 <div class="row1-text">Name</div>
-                <input type="text" id="familyName" name="familyName" class="rounded-input">
-                <input type="text" id="givenName" name="givenName" class="rounded-input">
-                <input type="text" id="middleName" name="middleName" class="rounded-input">
+                <input type="text" id="personalfamilyName" name="familyName" placeholder="Family Name" class="rounded-input">
+                <input type="text" id="personalgivenName" name="givenName" placeholder="Given Name" class="rounded-input">
+                <input type="text" id="personalmiddleName" name="middleName" placeholder="Middle Name" class="rounded-input">
             </div>
 
             <div class="row3-text-container">
@@ -60,13 +73,13 @@
 
             <!-- ROW 4 -->
             <div class="row4-fields-container">
-                <select id = "sex">
+                <select id = "sex" name="Sex" required>
                     <option value="" disabled selected>Select</option>
                     <option value="1">Male</option>
                     <option value="2">Female</option>
                 </select>
 
-                <select id = "age">
+                <select id = "age" name="Age" required>
                     <option value="" disabled selected>Select</option>
                     <option value="1">16</option>
                     <option value="2">17</option>
@@ -76,7 +89,7 @@
                     <option value="6">Above 20</option>
                 </select>
 
-                <select id = "civilStatus">
+                <select id = "civilStatus" name="CivilStatus" required>
                     <option value="" disabled selected>Select</option>
                     <option value="1">Single</option>
                     <option value="2">Married</option>
@@ -91,8 +104,8 @@
 
             <!-- ROW 6 -->
             <div class="row6-fields-container">
-                <input type="text" id="highSchool" name="highSchool" class="rounded-input">
-                <select id = "highschoolLocation">
+                <input type="text" id="highSchool" name="HighSchool" class="rounded-input" required>
+                <select id = "highschoolLocation" name="HighschoolLocation">
                     <option value="" disabled selected>Select Location</option>
                     <option value="1">Outside Metro Manila</option>
                     <option value="2">Inside Metro Manila</option>
@@ -112,12 +125,8 @@
 
             <!-- ROW 8 -->
             <div class="row8-fields-container">
-                <select id = "region">
-                    <option value="" disabled selected>Select Region</option>
-                </select>
-                <select id = "province">
-                    <option value="" disabled selected>Select Province</option>
-                </select>
+                <input type="text" id="region" name="Region" placeholder="Region" class="rounded-input">
+                <input type="text" id="province" name="Province" placeholder="Province" class="rounded-input">
             </div>
 
             <!-- ROW 9 -->
@@ -128,12 +137,8 @@
 
             <!-- ROW 10 -->
             <div class="row10-fields-container">
-                <select id = "city">
-                    <option value="" disabled selected>Select City/Municipality</option>
-                </select>
-                <select id = "barangay">
-                    <option value="" disabled selected>Select Barangay</option>
-                </select>
+                <input type="text" id="city" name="City" placeholder="City" class="rounded-input">
+                <input type="text" id="barangay" name="Barangay" placeholder="Barangay" class="rounded-input">
             </div>
 
             <!-- ROW 11 -->
@@ -144,8 +149,8 @@
 
             <!-- ROW 12 -->
             <div class="row12-fields-container">
-                <input type="text" id="streetName" name="streetName" placeholder="Enter Street Name, Building, House No." class="rounded-input">
-                <input type="text" id="postalCode" name="postalCode" placeholder="Enter Postal Code" class="rounded-input">
+                <input type="text" id="streetName" name="StreetName" placeholder="Enter Street Name, Building, House No." class="rounded-input">
+                <input type="text" id="postalCode" name="PostalCode" placeholder="Enter Postal Code" class="rounded-input">
             </div>
             
             <!-- ROW 13 -->
@@ -155,7 +160,7 @@
                 </div>
 
                 <div class="row13-sameAddress">
-                    <input type="checkbox" id="sameAddress" name="sameAddress">
+                    <input type="checkbox" id="sameAddress" name="sameAddress" onclick="toggleSameAddress()">
                     <label for="sameAddress">Same as Home/Mailing Address</label>
                 </div>
 
@@ -167,12 +172,8 @@
 
             <!-- ROW 14 -->
             <div class="row14-fields-container">
-                <select id = "region2">
-                    <option value="" disabled selected>Select Region</option>
-                </select>
-                <select id = "province2">
-                    <option value="" disabled selected>Select Province</option>
-                </select>
+                <input type="text" id="provRegion" name="ProvincialRegion" placeholder="Region" class="rounded-input">
+                <input type="text" id="provProvince" name="ProvincialProvince" placeholder="Province" class="rounded-input">
             </div>
 
             <!-- ROW 15 -->
@@ -183,12 +184,8 @@
 
             <!-- ROW 16 -->
             <div class="row16-fields-container">
-                <select id = "city2">
-                    <option value="" disabled selected>Select City/Municipality</option>
-                </select>
-                <select id = "barangay2">
-                    <option value="" disabled selected>Select Barangay</option>
-                </select>
+                <input type="text" id="provCity" name="ProvincialCity" placeholder="City" class="rounded-input">
+                <input type="text" id="provBarangay" name="ProvincialBarangay" placeholder="Barangay" class="rounded-input">
             </div>
 
             <!-- ROW 17 -->
@@ -199,8 +196,8 @@
 
             <!-- ROW 18 -->
             <div class="row18-fields-container">
-                <input type="text" id="streetName" name="streetName2" placeholder="Enter Street Name, Building, House No." class="rounded-input">
-                <input type="text" id="postalCode" name="postalCode2" placeholder="Enter Postal Code" class="rounded-input">
+                <input type="text" id="provStreetName" name="ProvincialStreetName" placeholder="Enter Street Name, Building, House No." class="rounded-input">
+                <input type="text" id="provPostalCode" name="ProvincialPostalCode" placeholder="Enter Postal Code" class="rounded-input">
             </div>
 
             <!-- ROW 19 -->
@@ -211,13 +208,13 @@
 
             <!-- ROW 20 -->
             <div class="row20-fields-container">
-                <select id = "academicTerm">
+                <select id = "academicTermAdmission" name="AcademicTermAdmission">
                     <option value="" disabled selected>Select Academic Term</option>
                     <option value="1">1st semester</option>
                     <option value="2">2nd semester</option>
                 </select>
                 
-                <select id="academicYear1">
+                <select id="academicYearAdmission1" name="AcademicYearAdmission1">
                     <option value="" disabled selected>Select</option>
                     <option value="2022">2024</option>
                     <option value="2022">2023</option>
@@ -236,7 +233,7 @@
                     <option value="2022">2010</option>
                 </select>
                 <span class="dash">-</span>
-                <select id="academicYear2">
+                <select id="academicYearAdmission2" name="AcademicYearAdmission2">
                     <option value="" disabled selected>Select</option>
                     <option value="2022">2024</option>
                     <option value="2022">2023</option>
@@ -265,13 +262,13 @@
 
             <!-- ROW 22 -->
             <div class="row22-fields-container">
-                <select id = "academicTerm">
+                <select id = "academicYearDropped" name="AcademicYearDropped">
                     <option value="" disabled selected>Select Academic Term</option>
                     <option value="1">1st semester</option>
                     <option value="2">2nd semester</option>
                 </select>
                 
-                <select id="academicYear2-1">
+                <select id="academicYearDropped1" name="AcademicYearDropped1">
                     <option value="" disabled selected>Select</option>
                     <option value="2022">2024</option>
                     <option value="2022">2023</option>
@@ -290,7 +287,7 @@
                     <option value="2022">2010</option>
                 </select>
                 <span class="dash">-</span>
-                <select id="academicYear2-2">
+                <select id="academicYearDropped2" name="AcademicYearDropped2">
                     <option value="" disabled selected>Select</option>
                     <option value="2022">2024</option>
                     <option value="2022">2023</option>
@@ -318,31 +315,49 @@
 
             <!-- ROW 24 -->
             <div class="row24-fields-container">
-                <select id = "livingWithWhom">
+                <select id = "livingWithWhom" name="LivingWithWhom" onchange="toggleOthers()">
                     <option value="" disabled selected>Select Option</option>
-                    <option value="1">Parents</option>
-                    <option value="2">Relatives</option>
-                    <option value="3">Others, please specify</option>
+                    <option value="Parents">Parents</option>
+                    <option value="Relatives">Relatives</option>
+                    <option value="Others">Others, please specify</option>
                 </select>
             
-
+            </div>
                 <!-- Additional input field for specifying others -->
-                <div id="othersContainer" style="display: none;">
+                <div id="othersContainer">
                     <label for="otherSpecify">Specify Others:</label>
                     <input type="text" id="otherSpecify" name="otherSpecify">
                 </div>
 
                 <!-- Script for showing the additional input field
-                    function handleLivingWithWhom() {
-                        var livingWithWhomSelect = document.getElementById("livingWithWhom");
-                        var othersContainer = document.getElementById("othersContainer");
+                    <script>    
+                        function handleLivingWithWhom() {
+                            var livingWithWhomSelect = document.getElementById("livingWithWhom");
+                            var othersContainer = document.getElementById("otherSpecify");
 
-                        if (livingWithWhomSelect.value == "3") {
-                            othersContainer.style.display = "block";
-                        } else {
-                            othersContainer.style.display = "none";
+                            if (livingWithWhomSelect.value == "3") {
+                                // Hide select element
+                                livingWithWhomSelect.style.display = "none";
+
+                                // Show input element
+                                var inputElement = document.createElement("input");
+                                inputElement.setAttribute("type", "text");
+                                inputElement.setAttribute("id", "othersInput");
+                                inputElement.setAttribute("name", "othersInput");
+                                inputElement.setAttribute("placeholder", "Specify others");
+                                othersContainer.appendChild(inputElement);
+                            } else {
+                                // Remove input element
+                                var inputElement = document.getElementById("othersInput");
+                                if (inputElement) {
+                                    othersContainer.removeChild(inputElement);
+                                }
+                                
+                                // Show select element
+                                livingWithWhomSelect.style.display = "block";
+                            }
                         }
-                    }
+                    </script>
                 -->
             </div>
         </form>
@@ -350,20 +365,20 @@
 
     <div class="buttons-container">
         <!-- Back button -->
-        <div class="back-button">
-            <span class="back-icon">&#8592;</span>
-            <span class="back-text">Next</span>
+        <div class="back-button" id="back-button">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span class="back-text">Back</span>
         </div>
 
         <!-- Next button -->
-        <div class="next-button">
-            <span class="next-icon">&#8594;</span>
+        <div class="next-button" id="nextButtonPersonal">
+            <i class="fa-solid fa-arrow-right"></i>
             <span class="next-text">Next</span>
         </div>
     </div>
     
     <div id="backToTopBtn">
-        <img src="go-to-top_icon.png" alt="Back to Top">
+        <img src="/assets/icons/go-to-top_icon.png" alt="Back to Top">
     </div>
 
     <footer>
@@ -377,5 +392,7 @@
           <a href="#">About</a> | <a href="https://www.pup.edu.ph/about/contactus" target="_blank">Contact</a> | Version 1.0
     </footer>
 
+    <script type="text/javascript" src="../js/appscript.js"></script>
+    <script type="text/javascript" src="../js/personalBackground.js"></script>
 </body>
 </html>

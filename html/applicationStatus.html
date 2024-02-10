@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Status - PUP AFRA</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" type="text/css" href="../css/applicationStatus.css">
+
+    <script src="https://kit.fontawesome.com/3c2f95c9a6.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+</head>
+
+<body>
+
+    <header>
+        <img id="logo" src="/assets/icons/PUPLogo.png" alt="PUP AFRA Logo">
+        <a href="../html/index.html" target="_blank"    id="pupAfRA">PUP AFRA</a>
+
+        <div class="icon-container">
+            <i class="fa-solid fa-circle-user fa-2x" style="color: #464040;" onmouseover="this.style.color='#D9D9D9';" onmouseout="this.style.color='#464040';"></i>
+            <i class="fa-solid fa-caret-down fa-xl" style="color: #464040;" onmouseover="this.style.color='#D9D9D9';" onmouseout="this.style.color='#464040';"></i>
+    
+            <div class="dropdown-content">
+                <a href="#">Settings</a>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="title">
+        <h2>APPLICATION STATUS</h2>
+    </div>
+
+    <div class="appStat-container">
+        <div id="text-container">
+            <div id="name">APPLICANT'S NAME </div>
+            <div id="student-id">(Student ID)</div>
+        </div>
+        <div class="table-wrapper">
+            <table>
+                <tr>
+                    <td>Application Date</td>
+                    <td id="applicationDate"></td>
+                </tr>
+                <tr>
+                    <td>Academic Evaluation</td>
+                    <td id="academicEvaluation"></td>
+                </tr>
+                <tr>
+                    <td>Admission Services</td>
+                    <td id="admissionServices"></td>
+                </tr>
+                <tr>
+                    <td>Application Status</td>
+                    <td id="applicationStatus"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-left">
+          <a href="https://www.pup.edu.ph/terms/" target="_blank">Terms of Use</a> | <a href="https://www.pup.edu.ph/privacy/" target="_blank">Privacy Statement</a>
+        </div>
+        <div class="footer-center">
+          © 2023 PUP AFRA
+        </div>
+        <div class="footer-right">
+          <a href="#">About</a> | <a href="https://www.pup.edu.ph/about/contactus" target="_blank">Contact</a> | Version 1.0
+    </footer>
+
+</body>
+</html>
