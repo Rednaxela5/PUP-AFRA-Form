@@ -89,6 +89,28 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
+    const step3Button = document.getElementById('academic-background-step-button');
+
+    step3Button.addEventListener('click', function() {
+        // Check if all required fields are filled out
+        if (areAllFieldsFilledOut()) {
+            // Redirect to the academicBackground page
+             window.location.href = 'academicBackground.html';
+        } else {
+            // Display an error message
+            alert('Please fill out all required fields.');
+        }
+    });
+    
+
+     // Add event listeners for focus event on input fields
+     SexSelect.addEventListener('focus', function() {
+        // Check if family name input field is empty
+        if (this.value.trim() === '') {
+            // Trigger the browser's built-in validation message
+            this.reportValidity();
+        }
+    });
         
     AgeSelect.addEventListener('focus', function() {
         if (this.value.trim() === '') {
@@ -204,15 +226,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
-
-     // Add event listeners for focus event on input fields
-     SexSelect.addEventListener('focus', function() {
-        // Check if family name input field is empty
-        if (this.value.trim() === '') {
-            // Trigger the browser's built-in validation message
-            this.reportValidity();
-        }
-    });
 
 });
 

@@ -62,6 +62,33 @@ nextButton.addEventListener('click', function() {
     }
 });
 
+// Get the next button element
+const step2Button = document.getElementById('personal-background-step-button');
+
+// Add an event listener to the next button
+step2Button.addEventListener('click', function() {
+    // Check if all required fields are filled out
+    if (areAllFieldsFilledOut()) {
+        // Store the data in localStorage
+        localStorage.setItem('familyName', familyNameInput.value.trim());
+        localStorage.setItem('givenName', givenNameInput.value.trim());
+        localStorage.setItem('middleName', middleNameInput.value.trim());
+        // Add console.log statements to check if data is saved
+        console.log('Family Name:', familyNameInput.value.trim());
+        console.log('Given Name:', givenNameInput.value.trim());
+        console.log('Middle Name:', middleNameInput.value.trim());
+
+        // Redirect to the personalBackground page
+        window.location.href = 'personalBackground.html';
+        
+    } else {
+        // Display an error message
+        alert('Please fill out all required fields.');
+    }
+});
+
+
+
     // Add event listeners for focus event on input fields
     familyNameInput.addEventListener('focus', function() {
         // Check if family name input field is empty

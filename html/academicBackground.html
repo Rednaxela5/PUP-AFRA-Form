@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PUP AFRA - Academic Background</title>
+    <title>Academic Background - PUP AFRA</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <link rel="stylesheet" type="text/css" href="../css/academicBackground.css">
 
     <script src="https://kit.fontawesome.com/3c2f95c9a6.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
 </head>
 </head>
 
@@ -36,14 +38,13 @@
     <div class="form-container">
         <!-- Progress bar starts here -->
         <div class="progress-bar-container">
-            <button class="step-button"></button>
+            <button class="step-button" id="applicantInfo-step-button"></button>
             <div class="line1"></div>
-            <button class="step-button"></button>
-            <!-- turn the next line into line 2 and then turn line1 to line if nasa next page na :) ps. pwede siyang pseudo but ayaw kasi gumana sa end ko huhu-->
+            <button class="step-button" id="personal-background-step-button"></button>
             <div class="line2"></div>
             <button class="step-button"></button>
             <div class="line"></div>
-            <button class="step-button"></button>
+            <button class="step-button" ></button>
         </div>
 
         <div class="step-text-container">
@@ -61,7 +62,7 @@
 
         <!-- ROW 2 -->
         <div class="row2-fields-container">
-            <input type="text" id="course" name="course" placeholder="Course" class="rounded-input">
+            <input type="text" id="courseBeforeDropped" name="CourseBeforeDropped" placeholder="Course" class="rounded-input">
             <select id = "yearLevel-AB" class = "yearLevel">
                 <option value="" disabled selected>Select Year Level</option>
                 <option value="1">First Year</option>
@@ -77,19 +78,19 @@
 
         <!-- ROW 4.1 -->
         <div class="row4-1-fields-container">
-            <input type="checkbox" id="economic" name="economic">
+            <input type="checkbox" id="economic" name="Economic">
             <label for="economic" id="economicLabel">Economic</label>
 
-            <input type="checkbox" id="personalInterest" name="personalInterest">
+            <input type="checkbox" id="personalInterest" name="PersonalInterest">
             <label for="personalInterest" id="personalInterestLabel">Personal Interest</label>
         </div>
 
         <!-- ROW 4.2 -->
         <div class="row4-2-fields-container">
-            <input type="checkbox" id="empOpportunity" name="empOpportunity">
+            <input type="checkbox" id="empOpportunity" name="EmployementOpportunity">
             <label for="empOpportunity" id="empOpportunityLabel">Employment Opportunity</label>
 
-            <input type="checkbox" id="parentalChoice" name="parentalChoice">
+            <input type="checkbox" id="parentalChoice" name="ParentalChoice">
             <label for="parentalChoice" id="parentalChoiceLabel">Parental Choice</label>
         </div>
 
@@ -98,12 +99,12 @@
 
         <!-- ROW 6.1 -->
         <div class="row6-1-fields-container">
-            <input type="radio" id="fullTime" name="fullTime" value="fullTime">
+            <input type="radio" id="fullTime" name="FullTime" value="fullTime">
             <label for="fullTime" id="fullTimeLabel">Full time student</label>
         </div>
         <!-- ROW 6.2 -->
         <div class="row6-2-fields-container">
-            <input type="radio" id="working" name="working" value="working">
+            <input type="radio" id="working" name="Working" value="working">
             <label for="working" id="workingLabel">Working student</label>
         </div>
 
@@ -113,25 +114,25 @@
 
         <!-- ROW 8.1 -->
         <div class="row8-1-fields-container">
-            <input type="checkbox" id="selfImprovement" name="selfImprovement">
+            <input type="checkbox" id="selfImprovement" name="SelfImprovement">
             <label for="selfImprovement" id="selfImprovementLabel">For self-improvement</label>
 
-            <input type="checkbox" id="obtain2yearCourse" name="obtain2yearCourse">
+            <input type="checkbox" id="obtain2yearCourse" name="Obtain2yearCourse">
             <label for="obtain2yearCourse" id="obtain2yearCourseLabel">To obtain a two-year course</label>
         </div>
         <!-- ROW 8.2 -->
         <div class="row8-2-fields-container">
-            <input type="checkbox" id="finishAndObtainDegree" name="finishAndObtainDegree">
+            <input type="checkbox" id="finishAndObtainDegree" name="FinishAndObtainDegree">
             <label for="finishAndObtainDegree" id="finishAndObtainDegreeLabel">To finish and obtain a degree</label>
 
-            <input type="checkbox" id="obtainCertOnly" name="obtainCertOnly">
+            <input type="checkbox" id="obtainCertOnly" name="ObtainCertOnly">
             <label for="obtainCertOnly" id="obtainCertOnlyLabel">To obtain certificate only</label>
         </div>
         <!-- ROW 8.3 -->
         <div class="row8-3-fields-container">
-            <input type="checkbox" id="otherInitialPurpose" name="otherInitialPurpose">
+            <input type="checkbox" id="otherInitialPurpose" name="OtherInitialPurpose">
             <label for="otherInitialPurpose" id="otherInitialPurposeLabel">Others, please specify</label>
-            <input type="text" id="otherInitialPurposeText" name="otherInitialPurposeText" class="rounded-input">
+            <input type="text" id="otherInitialPurposeText" name="OtherInitialPurposeText" class="rounded-input">
         </div> 
 
         <!-- ROW 9 -->
@@ -139,7 +140,7 @@
 
         <!-- ROW 10 -->
         <div class="row10-fields-container">
-            <select id = "howLongBeenAway">
+            <select id = "howLongBeenAway" name="HowLongBeenAway">
                 <option value="" disabled selected>Select Option</option>
                 <option value="1">One Semester</option>
                 <option value="2">One year</option>
@@ -150,7 +151,7 @@
             <!-- Additional input field for specifying others -->
             <div id="othersContainer" style="display: none;">
                 <label for="otherSpecify">Specify Others:</label>
-                <input type="text" id="otherSpecify" name="otherSpecify">
+                <input type="text" id="otherSpecify" name="OtherSpecify">
             </div>
         </div>
 
@@ -159,12 +160,12 @@
 
         <!-- ROW 12.1 -->
         <div class="row12-1-fields-container">
-            <input type="radio" id="parents" name="parents" value="parents">
+            <input type="radio" id="parents" name="Parents" value="parents">
             <label for="parents" id="parentsLabel">Parents</label>
         </div>
         <!-- ROW 12.2 -->
         <div class="row12-2-fields-container">
-            <input type="radio" id="myself" name="myself" value="myself">
+            <input type="radio" id="myself" name="Myself" value="myself">
             <label for="myself" id="myselfLabel">Myself</label>
         </div>
 
@@ -173,25 +174,25 @@
 
         <!-- ROW 14.1 -->
         <div class="row8-1-fields-container">
-            <input type="checkbox" id="financeProb" name="financeProb">
+            <input type="checkbox" id="financeProb" name="FinanceProb">
             <label for="financeProb" id="financeProbLabel">Financial Problem</label>
 
-            <input type="checkbox" id="transferOfResidence" name="transferOfResidence">
+            <input type="checkbox" id="transferOfResidence" name="TransferOfResidence">
             <label for="transferOfResidence" id="transferOfResidenceLabel">Transfer of residence</label>
         </div>
         <!-- ROW 14.2 -->
         <div class="row8-2-fields-container">
-            <input type="checkbox" id="jobPlacement" name="jobPlacement">
+            <input type="checkbox" id="jobPlacement" name="JobPlacement">
             <label for="jobPlacement" id="jobPlacementLabel">Job placement</label>
 
-            <input type="checkbox" id="conflictWorkSched" name="conflictWorkSched">
+            <input type="checkbox" id="conflictWorkSched" name="ConflictWorkSched">
             <label for="conflictWorkSched" id="conflictWorkSchedLabel">Conflict of work schedule</label>
         </div>
         <!-- ROW 14.3 -->
         <div class="row8-3-fields-container">
-            <input type="checkbox" id="otherInitialPurpose" name="otherInitialPurpose">
+            <input type="checkbox" id="otherInitialPurpose" name="OtherInitialPurpose">
             <label for="otherInitialPurpose" id="otherReasonDropLabel">Others, please specify</label>
-            <input type="text" id="otherInitialPurposeText" name="otherInitialPurposeText" class="rounded-input">
+            <input type="text" id="otherInitialPurposeText" name="OtherInitialPurposeText" class="rounded-input">
         </div> 
 
         <!-- ROW 15 -->
@@ -199,7 +200,7 @@
 
         <!-- ROW 16 -->
         <div class="row16-fields-container">
-            <select id = "gradePointAve">
+            <select id = "gradePointAve" name="GradePointAve">
                 <option value="" disabled selected>Select Grade</option>
                 <option value="1">1.0</option>
                 <option value="2">1.25</option>
@@ -217,7 +218,7 @@
 
         <!-- ROW 18 -->
         <div class="row18-fields-container">
-            <textarea id="problemEncountered" name="problemEncountered"></textarea>
+            <textarea id="problemEncountered" name="ProblemEncountered"></textarea>
         </div>
 
         <!-- ROW 19 -->
@@ -231,13 +232,13 @@
             <div class="row20-radio-container">
                 <!-- ROW 20.1 -->
                 <div class="row20-1-fields-container">
-                    <input type="radio" id="yesWeeklyHrsStud" name="weeklyHrsStud" value="yesWeeklyHrsStud">
+                    <input type="radio" id="yesWeeklyHrsStud" name="YesWeeklyHrsStud" value="yesWeeklyHrsStud">
                     <label for="yesWeeklyHrsStud" id="yesWeeklyHrsStudLabel">Yes</label>
                 </div>
 
                 <!-- ROW 20.2 -->
                 <div class="row20-2-fields-container">
-                    <input type="radio" id="noWeeklyHrsStud" name="weeklyHrsStud" value="noWeeklyHrsStud">
+                    <input type="radio" id="noWeeklyHrsStud" name="NoWeeklyHrsStud" value="noWeeklyHrsStud">
                     <label for="noWeeklyHrsStud" id="noWeeklyHrsStudLabel">No</label>
                 </div>
             </div>
@@ -259,17 +260,17 @@
         <!-- ROW 22.1 -->
         <div class="row22-1-fields-container">
             <span class="row22-1-text">Faculty</span>
-            <input type="radio" id="facultyFavorable" name="facultyFavorable" value="facultyFavorable">
+            <input type="radio" id="facultyFavorable" name="FacultyFavorable" value="facultyFavorable">
             <label for="facultyFavorable" id="facultyFavorableLabel">Favorable</label>
-            <input type="radio" id="facultyNotFavorable" name="facultyNotFavorable" value="facultyNotFavorable">
+            <input type="radio" id="facultyNotFavorable" name="FacultyNotFavorable" value="facultyNotFavorable">
             <label for="facultyNotFavorable" id="facultyNotFavorableLabel">Not Favorable</label>
         </div>
         <!-- ROW 22.2 -->
         <div class="row22-2-fields-container">
             <span class="row22-2-text">Classmate/s</span>
-            <input type="radio" id="classmateFavorable" name="classmateFavorable" value="classmateFavorable">
+            <input type="radio" id="classmateFavorable" name="ClassmateFavorable" value="classmateFavorable">
             <label for="classmateFavorable" id="classmateFavorableLabel">Favorable</label>
-            <input type="radio" id="classmateNotFavorable" name="classmateNotFavorable" value="classmateNotFavorable">
+            <input type="radio" id="classmateNotFavorable" name="ClassmateNotFavorable" value="classmateNotFavorable">
             <label for="classmateNotFavorable" id="classmateNotFavorableLabel">Not Favorable</label>
         </div>
 
@@ -280,19 +281,19 @@
 
         <!-- ROW 24.1 -->
         <div class="row24-1-fields-container">
-            <input type="checkbox" id="forPromotion" name="forPromotion">
+            <input type="checkbox" id="forPromotion" name="ForPromotion">
             <label for="forPromotion" id="forPromotionLabel">For Promotion</label>
 
-            <input type="checkbox" id="finishAndObtainDegree" name="finishAndObtainDegree">
+            <input type="checkbox" id="finishAndObtainDegree" name="FinishAndObtainDegree">
             <label for="finishAndObtainDegree" id="finishAndObtainDegreeLabel">To finish and obtain a degree</label>
         </div>
 
         <!-- ROW 24.2 -->
         <div class="row24-2-fields-container">
-            <input type="checkbox" id="forPrestige" name="forPrestige">
+            <input type="checkbox" id="forPrestige" name="ForPrestige">
             <label for="forPrestige" id="forPrestigeLabel">For Prestige</label>
 
-            <input type="checkbox" id="toHavePermaJob" name="toHavePermaJob">
+            <input type="checkbox" id="toHavePermaJob" name="ToHavePermaJob">
             <label for="toHavePermaJob" id="toHavePermaJobLabel">To have a permanend job</label>
         </div>
 
@@ -301,34 +302,34 @@
 
         <!-- ROW 26.1 -->
         <div class="row26-1-fields-container">
-            <input type="checkbox" id="finishCourse" name="finishCourse">
+            <input type="checkbox" id="finishCourse" name="FinishCourse">
             <label for="finishCourse" id="finishCourseLabel">Continue and finish a course</label>
 
-            <input type="checkbox" id="transferNightSchool" name="transferNightSchool">
+            <input type="checkbox" id="transferNightSchool" name="TransferNightSchool">
             <label for="transferNightSchool" id="transferNightSchoolLabel">Transfer to night school</label>
         </div>
 
         <!-- ROW 26.2 -->
         <div class="row26-2-fields-container">
-            <input type="checkbox" id="shiftOtherSchool" name="shiftOtherSchool">
+            <input type="checkbox" id="shiftOtherSchool" name="ShiftOtherSchool">
             <label for="shiftOtherSchool" id="shiftOtherSchoolLabel">Shift to another course</label>
 
-            <input type="checkbox" id="otherSpecifyUponReturn" name="otherSpecifyUponReturn">
+            <input type="checkbox" id="otherSpecifyUponReturn" name="OtherSpecifyUponReturn">
             <label for="otherSpecifyUponReturn" id="otherSpecifyUponReturnLabel">Others, please specify</label>
-            <input type="text" id="otherintendsText" name="otherintendsText" class="rounded-input">
+            <input type="text" id="otherintendsText" name="OtherintendsText" class="rounded-input">
         </div>
     </div>
 
 
     <div class="buttons-container">
         <!-- Back button -->
-        <div class="back-button">
+        <div class="back-button" id="back-button">
             <i class="fa-solid fa-arrow-left"></i>
-            <span class="back-text">Next</span>
+            <span class="back-text">Back</span>
         </div>
 
         <!-- Next button -->
-        <div class="next-button">
+        <div class="next-button" id="nextButtonAcademic">
             <i class="fa-solid fa-arrow-right"></i>
             <span class="next-text">Next</span>
         </div>
@@ -351,6 +352,6 @@
     </footer>
 
     <script type="text/javascript" src="../js/appscript.js"></script>
-
+    <script type="text/javascript" src="../js/academicBackground.js"></script>
 </body>
 </html>

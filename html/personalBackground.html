@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PUP AFRA - Personal Background</title>
+    <title>Personal Background - PUP AFRA</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <link rel="stylesheet" type="text/css" href="../css/personalBackground.css">
 
     <script src="https://kit.fontawesome.com/3c2f95c9a6.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
 </head>
 
 <body>
@@ -40,7 +42,7 @@
             <div class="line1"></div>
             <button class="step-button"></button>
             <div class="line2"></div>
-            <button class="step-button"></button>
+            <button class="step-button" id="academic-background-step-button"></button>
             <div class="line"></div>
             <button class="step-button"></button>
         </div>
@@ -77,7 +79,7 @@
                     <option value="2">Female</option>
                 </select>
 
-                <select id = "age" name="Age">
+                <select id = "age" name="Age" required>
                     <option value="" disabled selected>Select</option>
                     <option value="1">16</option>
                     <option value="2">17</option>
@@ -87,7 +89,7 @@
                     <option value="6">Above 20</option>
                 </select>
 
-                <select id = "civilStatus" name="CivilStatus">
+                <select id = "civilStatus" name="CivilStatus" required>
                     <option value="" disabled selected>Select</option>
                     <option value="1">Single</option>
                     <option value="2">Married</option>
@@ -102,7 +104,7 @@
 
             <!-- ROW 6 -->
             <div class="row6-fields-container">
-                <input type="text" id="highSchool" name="HighSchool" class="rounded-input">
+                <input type="text" id="highSchool" name="HighSchool" class="rounded-input" required>
                 <select id = "highschoolLocation" name="HighschoolLocation">
                     <option value="" disabled selected>Select Location</option>
                     <option value="1">Outside Metro Manila</option>
@@ -206,7 +208,7 @@
 
             <!-- ROW 20 -->
             <div class="row20-fields-container">
-                <select id = "academicYearAdmission" name="AcademicTermAdmission">
+                <select id = "academicTermAdmission" name="AcademicTermAdmission">
                     <option value="" disabled selected>Select Academic Term</option>
                     <option value="1">1st semester</option>
                     <option value="2">2nd semester</option>
