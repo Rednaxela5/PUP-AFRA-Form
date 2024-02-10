@@ -361,8 +361,10 @@ input[type="radio"] {
 }
 
 #otherInitialPurposeText {
+    display: none;
     height: 5px;
     width: 14rem;
+    border-radius: 7px;
 }
 /* End of row8 css */
 

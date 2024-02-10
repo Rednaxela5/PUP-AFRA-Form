@@ -62,13 +62,57 @@
 
         <!-- ROW 2 -->
         <div class="row2-fields-container">
-            <input type="text" id="courseBeforeDropped" name="CourseBeforeDropped" placeholder="Course" class="rounded-input">
+            <select id="courseBeforeDropped" name="CourseBeforeDropped" class="rounded-input" required>
+                <option value="" disabled selected>Course</option>
+                    <option value="Bachelor in Library and Information Science">Bachelor in Library and Information Science (BLIS)</option>
+                    <option value="Bachelor of Arts in Philosophy">Bachelor of Arts in Philosophy (ABPHILO)</option>
+                    <option value="Bachelor of Arts in History">Bachelor of Arts in History (ABH)</option>
+                    <option value="Bachelor of Science in Architecture">Bachelor of Science in Architecture (BS ARCH)</option>
+                    <option value="Bachelor of Science in Interior Design">Bachelor of Science in Interior Design (BSID)</option>
+                    <option value="Bachelor of Science in Accountancy">Bachelor of Science in Accountancy (BSA)</option>
+                    <option value="Bachelor of Science in Business Administration major in Marketing Management">Bachelor of Science in Business Administration major in Marketing Management (BSBA-MM)</option>
+                    <option value="Bachelor of Science in Business Administration major in Human Resource Development Management">Bachelor of Science in Business Administration major in Human Resource Development Management (BSBA-HRDM)</option>
+                    <option value="Bachelor in Journalism">Bachelor in Journalism (BJ)</option>
+                    <option value="Bachelor of Science in Computer Science">Bachelor of Science in Computer Science (BSCS)</option>
+                    <option value="Bachelor of Science in Information Technology">Bachelor of Science in Information Technology (BSIT)</option>
+                    <option value="Bachelor of Science in Mechanical Engineering">Bachelor of Science in Mechanical Engineering (BSME)</option>
+                    <option value="Bachelor of Science in Civil Engineering">Bachelor of Science in Civil Engineering (BSCE)</option>
+                    <option value="Bachelor of Science in Electrical Engineering">Bachelor of Science in Electrical Engineering (BSEE)</option>
+                    <option value="Bachelor of Science in Industrial Engineering">Bachelor of Science in Industrial Engineering (BSIE)</option>
+                    <option value="Bachelor of Science in Electronics and Communications Engineering">Bachelor of Science in Electronics and Communications Engineering (BSECE)</option>
+                    <option value="Bachelor of Science in Computer Engineering">Bachelor of Science in Computer Engineering (BSCoE)</option>
+                    <option value="Bachelor of Science in Biology">Bachelor of Science in Biology (BSBIO)</option>
+                    <option value="Bachelor of Science in Nutrition and Dietetics">Bachelor of Science in Nutrition and Dietetics (BSND)</option>
+                    <option value="Bachelor of Science in Tourism Management">Bachelor of Science in Tourism Management (BSTM)</option>
+                    <option value="Bachelor of Science in Food Technology">Bachelor of Science in Food Technology (BSFT)</option>
+                    <option value="Bachelor of Science in Mathematics">Bachelor of Science in Mathematics (BSM)</option>
+                    <option value="Bachelor in Physical Education">Bachelor in Physical Education (BPE)</option>
+                    <option value="Bachelor of Arts in English">Bachelor of Arts in English (ABE)</option>
+                    <option value="Bachelor of Arts in Filipino">Bachelor of Arts in Filipino (ABF)</option>
+                    <option value="Bachelor of Science in Chemistry">Bachelor of Science in Chemistry (BSCHEM)</option>
+                    <option value="Bachelor of Science in Physics">Bachelor of Science in Physics (BSP)</option>
+                    <option value="Bachelor in Office Administration">Bachelor in Office Administration (BOA)</option>
+                    <option value="Bachelor of Science in Entrepreneurial Management">Bachelor of Science in Entrepreneurial Management (BSEM)</option>
+                    <option value="Bachelor in Advertising and Public Relation">Bachelor in Advertising and Public Relation (BAPR)</option>
+                    <option value="Bachelor in Communication Research">Bachelor in Communication Research (BCR)</option>
+                    <option value="Bachelor in Cooperative">Bachelor in Cooperative (BC)</option>
+                    <option value="Bachelor in Applied Statistics">Bachelor in Applied Statistics (BAS)</option>
+                    <option value="Bachelor of Science in Railway Engineering and Management">Bachelor of Science in Railway Engineering and Management (BSREM)</option>
+                    <option value="Bachelor on Broadcast Communication">Bachelor on Broadcast Communication (BBRC)</option>
+                    <option value="Bachelor of Science in Industrial & Organizational Psychology">Bachelor of Science in Industrial & Organizational Psychology (BSIOP)</option>
+                    <option value="Bachelor of Science in Clinical Psychology">Bachelor of Science in Clinical Psychology (BSCP)</option>
+                    <option value="Bachelor of Arts in Theater Arts">Bachelor of Arts in Theater Arts (ABTA)</option>
+                    <option value="Bachelor of Science in Transportation Management">Bachelor of Science in Transportation Management (BTM)</option>
+                    <option value="Bachelor of Science in Hospitality Management">Bachelor of Science in Hospitality Management (BHM)</option>
+
+            </select>
+
             <select id = "yearLevel-AB" class = "yearLevel">
                 <option value="" disabled selected>Select Year Level</option>
                 <option value="1">First Year</option>
                 <option value="2">Second Year</option>
-                <option value="2">Third Year</option>
-                <option value="2">Fourth Year</option>
+                <option value="3">Third Year</option>
+                <option value="4">Fourth Year</option>
             </select>
         </div>
 
@@ -99,12 +143,12 @@
 
         <!-- ROW 6.1 -->
         <div class="row6-1-fields-container">
-            <input type="radio" id="fullTime" name="FullTime" value="fullTime">
+            <input type="radio" id="fullTime" name="Classification" value="fullTime">
             <label for="fullTime" id="fullTimeLabel">Full time student</label>
         </div>
         <!-- ROW 6.2 -->
         <div class="row6-2-fields-container">
-            <input type="radio" id="working" name="Working" value="working">
+            <input type="radio" id="working" name="Classification" value="working">
             <label for="working" id="workingLabel">Working student</label>
         </div>
 
@@ -130,7 +174,7 @@
         </div>
         <!-- ROW 8.3 -->
         <div class="row8-3-fields-container">
-            <input type="checkbox" id="otherInitialPurpose" name="OtherInitialPurpose">
+            <input type="checkbox" id="otherInitialPurpose" name="OtherInitialPurpose" onclick="purpose_toggleOthers()">
             <label for="otherInitialPurpose" id="otherInitialPurposeLabel">Others, please specify</label>
             <input type="text" id="otherInitialPurposeText" name="OtherInitialPurposeText" class="rounded-input">
         </div> 

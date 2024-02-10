@@ -30,6 +30,18 @@
         // Navigate back to the personalBackground.html page
         window.location.href = 'personalBackground.html';
     });
+
+function purpose_toggleOthers() {
+    var checkotherInitial = document.getElementById('otherInitialPurpose');
+    var otherChecked = document.getElementById('otherInitialPurposeText');
+
+    if (checkotherInitial.checked == true) {
+        otherChecked.style.display = 'flex';
+    }
+    else {
+        otherChecked.style.display = 'none';
+    }
+}
    
 
 
