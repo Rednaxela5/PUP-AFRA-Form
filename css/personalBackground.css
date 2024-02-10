@@ -826,3 +826,26 @@ select option:disabled {
 }
 /* End of back button css */
 /* End of buttons container css */
+
+
+
+#othersContainer{
+    width: 990px; 
+    justify-content: space-between;
+    margin-left: 125px;
+    text-align: left;
+    font-weight: bold;
+    color: #464040;
+    padding-bottom: 80px;
+}
+
+#otherSpecify {
+    border: 1.5px solid #555555;
+    border-radius: 10px;
+    padding: 15px;
+    width: 38.2rem;
+    font-family: 'montserrat', sans-serif;
+    font-size: 20px; 
+    margin-top: -75px;
+    
+}
