@@ -1,5 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+    
     window.onload = function() {
+
         // Retrieve the stored data from localStorage
         const storedFamilyName = localStorage.getItem('familyName');
         const storedGivenName = localStorage.getItem('givenName');
@@ -92,6 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
     //      window.location.href = 'applicationForReAdmission.html';
     //  });
 
+    
 
     // Add event listener to the next button
     const nextButton = document.getElementById('nextButtonPersonal');
@@ -244,3 +248,46 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+
+function toggleSameAddress() {
+    // Home Address Fields
+    var sameAddressCheckbox = document.getElementById("sameAddress");
+    var region = document.getElementById("region");
+    var province = document.getElementById("province");
+    var city = document.getElementById("city");
+    var barangay = document.getElementById("barangay");
+    var streetName = document.getElementById("streetName");
+    var postalCode = document.getElementById("postalCode");
+
+    // Pronvincial Address Fields
+    var provRegion = document.getElementById("provRegion");
+    var provProvince = document.getElementById("provProvince");
+    var provCity = document.getElementById("provCity");
+    var provBarangay = document.getElementById("provBarangay");
+    var provStreetName = document.getElementById("provStreetName");
+    var provPostalCode = document.getElementById("provPostalCode");
+
+
+    if (sameAddressCheckbox.checked == true) 
+    {
+        provRegion.value = region.value
+        provProvince.value = province.value
+        provCity.value = city.value
+        provBarangay.value = barangay.value
+        provStreetName.value = streetName.value
+        provPostalCode.value = postalCode.value
+    }
+    else 
+    {
+        provRegion.value = "";
+        provProvince.value = "";
+        provCity.value = "";
+        provBarangay.value = "";
+        provStreetName.value = "";
+        provPostalCode.value = "";
+    }
+
+}
+
