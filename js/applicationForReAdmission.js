@@ -1,3 +1,4 @@
+
 // Get references to input fields
 const familyNameInput = document.getElementById('familyName');
 const givenNameInput = document.getElementById('givenName');

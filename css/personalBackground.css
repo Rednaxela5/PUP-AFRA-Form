@@ -420,14 +420,14 @@ select option:disabled {
 /* row 8 */
 .row8-fields-container {
     display: flex;
-    width: 985px; 
+    width: 980px; 
     justify-content: space-between;
-    margin-left: 110px;
+    margin-left: 117px;
     text-align: left;
 }
 
 #region, #province {
-    width: 50rem;
+    width: 22.3rem;
 }
 /* end of row 8 */
 
@@ -455,14 +455,14 @@ select option:disabled {
 /* row 10 */
 .row10-fields-container {
     display: flex;
-    width: 985px; 
+    width: 980px; 
     justify-content: space-between;
-    margin-left: 110px;
+    margin-left: 117px;
     text-align: left;
 }
 
 #city, #barangay {
-    width: 50rem;
+    width: 22.3rem;
 }
 /* end of row 10 */
 
@@ -491,9 +491,9 @@ select option:disabled {
 /* row 12 */
 .row12-fields-container {
     display: flex;
-    width: 976px; 
+    width: 979px; 
     justify-content: space-between;
-    margin-left: 120px;
+    margin-left: 117px;
     text-align: left;
 }
 
@@ -502,7 +502,7 @@ select option:disabled {
 }
 
 #postalCode {
-    width: 11.8rem;
+    width: 12rem;
 }
 /* end of row 12 */
 
@@ -551,14 +551,14 @@ select option:disabled {
 /* row 14 */
 .row14-fields-container {
     display: flex;
-    width: 985px; 
+    width: 980px; 
     justify-content: space-between;
-    margin-left: 110px;
+    margin-left: 117px;
     text-align: left;
 }
 
-#region2, #province2 {
-    width: 50rem;
+#provRegion, #provProvince {
+    width: 22.3rem;
 }
 /* end of row 14 */
 
@@ -586,14 +586,14 @@ select option:disabled {
 /* row 16 */
 .row16-fields-container {
     display: flex;
-    width: 985px; 
+    width: 980px; 
     justify-content: space-between;
-    margin-left: 110px;
+    margin-left: 117px;
     text-align: left;
 }
 
-#city2, #barangay2 {
-    width: 50rem;
+#provCity, #provBarangay {
+    width: 22.3rem;
 }
 /* end of row 16 */
 
@@ -622,18 +622,18 @@ select option:disabled {
 /* row 18 */
 .row18-fields-container {
     display: flex;
-    width: 976px; 
+    width: 980px; 
     justify-content: space-between;
-    margin-left: 120px;
+    margin-left: 117px;
     text-align: left;
 }
 
-#streetName2{
+#provStreetName {
     width: 32.6rem;
 }
 
-#postalCode2 {
-    width: 11.8rem;
+#provPostalCode {
+    width: 12rem;
 }
 /* end of row 18 */
 
@@ -667,13 +667,14 @@ select option:disabled {
     text-align: left;
 }
 
-#academicTerm {
+#academicTermAdmission {
     width: 25rem;
 }
 
-#academicYear1, #academicYear2 {
+#academicYearAdmission1, #academicYearAdmission2 {
     width: 12rem;
 }
+
 .dash {
     font-size: 15px;
     font-weight: bolder;
@@ -710,11 +711,11 @@ select option:disabled {
     text-align: left;
 }
 
-#academicTerm {
+#academicYearDropped {
     width: 25rem;
 }
 
-#academicYear2-1, #academicYear2-2 {
+#academicYearDropped1, #academicYearDropped2 {
     width: 12rem;
 }
 .dash {
