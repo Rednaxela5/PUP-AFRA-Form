@@ -1,4 +1,4 @@
-
+document.addEventListener('DOMContentLoaded', function() {
 // Get references to input fields
 const familyNameInput = document.getElementById('familyName');
 const givenNameInput = document.getElementById('givenName');
@@ -187,3 +187,9 @@ step2Button.addEventListener('click', function() {
             this.reportValidity();
         }
     });
+
+
+
+    });
+    
+    

@@ -75,6 +75,24 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+
+    //  // Get references to the buttons outside of DOMContentLoaded
+    //  const stepButton = document.getElementById('applicantInfo-step-button');
+    //  const backButton = document.getElementById('back-button');
+ 
+    //  // Add event listener for step button
+    //  stepButton.addEventListener('click', function() {
+    //      // Navigate back to the applicationForReAdmission.html page
+    //      window.location.href = 'applicationForReAdmission.html';
+    //  });
+ 
+    //  // Add event listener for back button
+    //  backButton.addEventListener('click', function() {
+    //      // Navigate back to the applicationForReAdmission.html page
+    //      window.location.href = 'applicationForReAdmission.html';
+    //  });
+
+
     // Add event listener to the next button
     const nextButton = document.getElementById('nextButtonPersonal');
 
@@ -101,6 +119,24 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Please fill out all required fields.');
         }
     });
+
+        // Get references to the buttons
+        const stepButton = document.getElementById('applicantInfo-step-button');
+        const backButton = document.getElementById('back-button');
+        // Get the next button element
+    
+        // Add event listener for step button
+        stepButton.addEventListener('click', function() {
+            // Navigate back to the applicationForReAdmission.html page
+            window.location.href = 'applicationForReAdmission.html';
+        });
+    
+        // Add event listener for back button
+        backButton.addEventListener('click', function() {
+            // Navigate back to the applicationForReAdmission.html page
+            window.location.href = 'applicationForReAdmission.html';
+        });
+    
     
 
      // Add event listeners for focus event on input fields
@@ -207,26 +243,4 @@ document.addEventListener('DOMContentLoaded', function() {
             this.reportValidity();
         }
     });
-
-    // Get references to the buttons
-    const stepButton = document.getElementById('applicantInfo-step-button');
-    const backButton = document.getElementById('back-button');
-    // Get the next button element
-
-    // Add event listener for step button
-    stepButton.addEventListener('click', function() {
-        // Navigate back to the applicationForReAdmission.html page
-        window.location.href = 'applicationForReAdmission.html';
-    });
-
-    // Add event listener for back button
-    backButton.addEventListener('click', function() {
-        // Navigate back to the applicationForReAdmission.html page
-        window.location.href = 'applicationForReAdmission.html';
-    });
-
-
-
 });
-
-   

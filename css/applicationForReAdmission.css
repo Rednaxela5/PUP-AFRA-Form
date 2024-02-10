@@ -442,9 +442,9 @@ input[type="date"] { /* CSS for all the date*/
 
 /* row 10 */
 .row10-fields-container {
-    margin-left: 120px;
+    margin-left: 110px;
     display: flex;
-    width: 975px; 
+    width: 982px; 
     justify-content: space-between;
     text-align: left;
 }
@@ -461,7 +461,7 @@ input[type="date"] { /* CSS for all the date*/
 }
 
 #courseEnrolled {
-    width: 30rem;
+    width: 17.5rem;
     margin-top: 11px;
     font-family: 'montserrat', sans-serif;
     font-size: 20px; 
