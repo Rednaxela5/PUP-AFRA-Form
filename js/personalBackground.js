@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
 
     // Add event listener to the next button
-    const nextButton = document.getElementById('nextButtonPersonal');
+    const nextButton = document.getElementById('nextButton');
 
     nextButton.addEventListener('click', function() {
         // Check if all required fields are filled out

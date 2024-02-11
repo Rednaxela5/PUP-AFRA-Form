@@ -37,30 +37,96 @@ function areAllFieldsFilledOut() {
     }
 }
 
-// Get the next button element
-const nextButton = document.getElementById('nextButton');
 
-// Add an event listener to the next button
-nextButton.addEventListener('click', function() {
-    // Check if all required fields are filled out
-    if (areAllFieldsFilledOut()) {
-        // Store the data in localStorage
-        localStorage.setItem('familyName', familyNameInput.value.trim());
-        localStorage.setItem('givenName', givenNameInput.value.trim());
-        localStorage.setItem('middleName', middleNameInput.value.trim());
-        // Add console.log statements to check if data is saved
-        console.log('Family Name:', familyNameInput.value.trim());
-        console.log('Given Name:', givenNameInput.value.trim());
-        console.log('Middle Name:', middleNameInput.value.trim());
 
-        // Redirect to the personalBackground page
-        window.location.href = 'personalBackground.html';
+
+
+
+// // Function to handle form submission
+// function handleFormSubmit(event) {
+//     event.preventDefault();
+
+//     if (areAllFieldsFilledOut()) {
+//         const formData = {
+//             FamilyName: familyNameInput.value.trim(),
+//             GivenName: givenNameInput.value.trim(),
+//             MiddleName: middleNameInput.value.trim()
+//         };
+
+//         // Make a POST request to the provided endpoint
+//         fetch('https://script.google.com/macros/s/AKfycbzLBPTV9UYGtwgjZQgNjsneE4EpzT0OrncrHpAJJcu970nIgAu9WtNQ0cTQN5CORlg/exec', {
+//             method: 'POST',
+//             headers: {
+//                 'Content-Type': 'application/json'
+//             },
+//             body: JSON.stringify(formData)
+//         })
+//         .then(response => {
+//             if (response.ok) {
+//                 console.log('Data posted successfully');
+//                 window.location.href = 'personalBackground.html';
+//             } else {
+//                 console.error('Failed to post data to Google Sheets:', response.statusText);
+//                 alert('Failed to post data to Google Sheets.');
+//             }
+//         })
+//         .catch(error => {
+//             console.error('Error posting data to Google Sheets:', error);
+//             alert('Failed to post data to Google Sheets.');
+//         });
+//     } else {
+//         alert('Please fill out all required fields.');
+//     }
+// }
+
+// // Add event listener to the next button
+// document.getElementById('nextButton').addEventListener('click', handleFormSubmit);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // Get the next button element
+// const nextButton = document.getElementById('nextButton');
+
+// // Add an event listener to the next button
+// nextButton.addEventListener('click', function() {
+//     // Check if all required fields are filled out
+//     if (areAllFieldsFilledOut()) {
+//         // Store the data in localStorage
+//         localStorage.setItem('familyName', familyNameInput.value.trim());
+//         localStorage.setItem('givenName', givenNameInput.value.trim());
+//         localStorage.setItem('middleName', middleNameInput.value.trim());
+//         // Add console.log statements to check if data is saved
+//         console.log('Family Name:', familyNameInput.value.trim());
+//         console.log('Given Name:', givenNameInput.value.trim());
+//         console.log('Middle Name:', middleNameInput.value.trim());
+
+//         // Redirect to the personalBackground page
+//         window.location.href = 'personalBackground.html';
         
-    } else {
-        // Display an error message
-        alert('Please fill out all required fields.');
-    }
-});
+//     } else {
+//         // Display an error message
+//         alert('Please fill out all required fields.');
+//     }
+// });
 
 // Get the next button element
 const step2Button = document.getElementById('personal-background-step-button');
