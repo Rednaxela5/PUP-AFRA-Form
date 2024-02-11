@@ -515,6 +515,16 @@ input[type="radio"] {
     margin: auto
 }
 
+
+#weeklyHrsTextLabel {
+    position: absolute;
+    margin-top: -39px;
+    margin-left: 13.8rem;
+    color: #880000;
+    font-weight: bold;
+
+}
+
 #weeklyHrsStudSelect {
     width: 15rem;
     margin-left: 13.8rem;
