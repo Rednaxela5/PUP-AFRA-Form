@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     method: 'POST',
                     body: formData
                 })
-
+            
                 .then(response => {
                     if (response.ok) {
                         // Redirect to personalBackground.html upon successful submission
