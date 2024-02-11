@@ -361,21 +361,53 @@ input[type="radio"] {
 }
 
 #otherInitialPurposeText {
-    display: none;
+    visibility: hidden;
     height: 5px;
     width: 14rem;
+    margin-left: 0.1em;
     border-radius: 7px;
+    padding-left: 10px;
+    font-size: 100%;
 }
+
+#otherInitialPurposeTextDrop {
+    visibility: hidden;
+    height: 5px;
+    width: 14rem;
+    margin-left: 0.1em;
+    border-radius: 7px;
+    padding-left: 10px;
+    font-size: 100%;
+}
+
 /* End of row8 css */
 
 /* Start of row10 css */
 .row10-fields-container {
+    display: inline-flex;
     width: 985px; 
     margin-left: 117px;
-    padding-bottom: 8px;
+    padding-bottom: 5px;
 }
 /* End of row10 css */
 
+#othersContainer {
+    visibility: hidden;
+    margin-left: 3%;
+}
+
+#otherSpecify {
+    border: 1.5px solid #555555;
+    font-family: 'montserrat', sans-serif;
+    font-size: large;
+    margin-top: 10px;
+    margin-left: 1rem;
+    height: 3.2rem;
+    width: 10rem;
+    border-radius: 10px;
+    padding: 0 0.5em 0 0.5em;
+
+}
 /* Start of row12 css */
 .row12-1-fields-container, .row12-2-fields-container {
     width: 985px; 
@@ -433,6 +465,7 @@ input[type="radio"] {
     height: 6rem;
     font-family: 'montserrat', sans-serif;
     font-size: 20px; 
+    padding: 15px;
 }
 /* End of row18 css */
 
