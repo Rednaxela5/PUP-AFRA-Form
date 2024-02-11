@@ -40,8 +40,6 @@ function areAllFieldsFilledOut() {
 
 
 
-
-
 // // Function to handle form submission
 // function handleFormSubmit(event) {
 //     event.preventDefault();
@@ -80,25 +78,7 @@ function areAllFieldsFilledOut() {
 // }
 
 // // Add event listener to the next button
-// document.getElementById('nextButton').addEventListener('click', handleFormSubmit);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// document
 
 
 
@@ -127,6 +107,10 @@ function areAllFieldsFilledOut() {
 //         alert('Please fill out all required fields.');
 //     }
 // });
+
+
+
+
 
 // Get the next button element
 const step2Button = document.getElementById('personal-background-step-button');
@@ -256,8 +240,6 @@ step2Button.addEventListener('click', function() {
 
 
 
-
-
-    });
+});
     
     

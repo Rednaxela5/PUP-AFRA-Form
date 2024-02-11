@@ -24,15 +24,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const academicYearAdmission1Select = document.getElementById('academicYearAdmission1');
     const academicYearAdmission2Select = document.getElementById('academicYearAdmission2');
     const academicYearDroppedSelect = document.getElementById('academicYearDropped');
-
     const academicYearDropped1Select = document.getElementById('academicYearDropped1');
     const academicYearDropped2Select = document.getElementById('academicYearDropped2');
     const livingWithWhomSelect = document.getElementById('livingWithWhom');
-    const otherSpecifyInput = document.getElementById('otherSpecify');
-    
    
     
     const successMessage = document.getElementById('successMessage');
+
+
 
     // Function to show the success message
     function showSuccessMessage() {
@@ -75,8 +74,6 @@ document.addEventListener('DOMContentLoaded', function() {
             && academicYearDropped1Select.value.trim() !== '' 
             && academicYearDropped2Select.value.trim() !== ''
             && livingWithWhomSelect.value.trim() !== ''
-
-            && otherSpecifyInput.value.trim() !== ''
             
             
             
@@ -108,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
             formData.append('AcademicYearDropped1', academicYearDropped1Select.value.trim());
             formData.append('AcademicYearDropped2', academicYearDropped2Select.value.trim());
             formData.append('LivingWithWhom', livingWithWhomSelect.value.trim());
-            formData.append('LivingWithWhom', otherSpecifyInput.value.trim());
+
 
             
             // Send a POST request to your GAS endpoint

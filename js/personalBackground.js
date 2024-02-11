@@ -110,6 +110,11 @@ document.addEventListener('DOMContentLoaded', function() {
     //         alert('Please fill out all required fields.');
     //     }
     // });
+
+
+
+
+
     
     const step3Button = document.getElementById('academic-background-step-button');
 
