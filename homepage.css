@@ -164,7 +164,7 @@ footer {
 }
 
 #backToTopBtn:hover img {
-  content: url(/assets/icons/hover-go-to-top_icon.png); 
+  content: url(assets/icons/hover-go-to-top_icon.png); 
 }
 
 /* End of footer css */
