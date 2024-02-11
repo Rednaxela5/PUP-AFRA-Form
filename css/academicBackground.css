@@ -511,6 +511,7 @@ input[type="radio"] {
 }
 
 .row20-select-container {
+    visibility: hidden;
     flex-grow: 1;
     display: grid;
 }
@@ -599,6 +600,7 @@ input[type="radio"] {
 }
 
 #otherintendsText {
+    visibility: hidden;
     height: 5px;
     width: 11rem;
     

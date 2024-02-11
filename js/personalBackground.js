@@ -294,9 +294,11 @@ function toggleSameAddress() {
 function toggleOthers() {
     var livingWithWhom = document.getElementById('livingWithWhom').value;
     var othersContainer = document.getElementById("othersContainer");
+    var othersInput = document.getElementById("otherSpecify");
 
     if (livingWithWhom === "Others") {
         othersContainer.style.display = "block";
+        livingWithWhom = othersInput.value;
     }
     else {
         othersContainer.style.display = "none";
@@ -305,3 +307,14 @@ function toggleOthers() {
 
 }
 
+function updateLivingWithWhom() {
+    var livingWithWhomSelect = document.getElementById("livingWithWhom");
+    var otherSpecifyInput = document.getElementById("otherSpecify");
+
+    if (otherSpecifyInput.value.trim() !== "") {
+        livingWithWhomSelect.value = otherSpecifyInput.value;
+    }
+    else {
+        livingWithWhomSelect.value = "";
+    }
+}
