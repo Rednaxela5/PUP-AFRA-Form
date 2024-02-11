@@ -307,3 +307,14 @@ function toggleOthers() {
 
 }
 
+function updateLivingWithWhom() {
+    var livingWithWhomSelect = document.getElementById("livingWithWhom");
+    var otherSpecifyInput = document.getElementById("otherSpecify");
+
+    if (otherSpecifyInput.value.trim() !== "") {
+        livingWithWhomSelect.value = otherSpecifyInput.value;
+    }
+    else {
+        livingWithWhomSelect.value = "";
+    }
+}
