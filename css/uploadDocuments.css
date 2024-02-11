@@ -226,7 +226,7 @@ th {
     background-color: #DBE8DE;
     color: #097152;
     border: none;
-    padding: 11px;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -235,7 +235,7 @@ th {
     font-family: 'montserrat', sans-serif;
     cursor: pointer;
     border-radius: 30px;
-    width: 7.0rem; 
+    width: 5.5rem; 
 }
 
 .view-btn {
