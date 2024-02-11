@@ -12,12 +12,12 @@
     Unlocking Effortless Re-Admission
     <br/>
     <br/>
-    <a href="documents/Documentation.docx"><strong>Explore the timeline docs »</strong></a>
+    <a href="documents/Documentation.docx" target="_blank"><strong>Explore the timeline docs »</strong></a>
     <br/>
     <br/>
-    <a href="documents/PUP Application for Re-admission.pdf">View Manual Form</a>
+    <a href="documents/PUP Application for Re-admission.pdf" target="_blank">View Manual Form</a>
     .
-    <a href="https://github.com/Rednaxela5/PUP-AFRA-Form/tree/main/assets/readme-screenshots/Figma%20Designs">View Figma Designs</a>
+    <a href="https://github.com/Rednaxela5/PUP-AFRA-Form/tree/main/assets/readme-screenshots/Figma%20Designs" target="_blank">View Figma Designs</a>
     .
     <a href="https://github.com/Rednaxela5/PUP-AFRA-Form/issues">Report Bug</a>
     .
@@ -104,6 +104,13 @@ The following tools and technologies were involved in the making of this project
 * **Google Sheets API** - Google Sheets API is a powerful tool for reading and writing data to and from Google Sheets.
 * **App Script** - Google Apps Script is a cloud-based scripting language that provides easy ways to automate tasks across Google products and third-party services and build web applications.
 * **[Visual Studio Code](https://code.visualstudio.com/)** - Lightweight code editor for writing, editing, and debugging code, widely used in web development.
+
+## Challenges
+Here are some of the challenges we faced while developing the website:
+
+* Time Constraints
+* Learning Curve
+* Integration of Google Sheets API to the website
 
 ## Roadmap
 -   [x] ~~Select a manual form from PUP Website.~~
