@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const nextButton = document.getElementById('nextButton');
     const reAdmissionForm = document.getElementById('reAdmissionForm');
-
+    
     const blurOverlay = document.querySelector('.blur-overlay');
 
     const familyNameInput = document.getElementById('familyName');
@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const unitsEarnedNumber = document.getElementById('unitsEarned');
     const reasonForStoppingArea = document.getElementById('reasonForStopping');
     const reasonForContinuingArea = document.getElementById('reasonForContinuing');
-    
     
     const successMessage = document.getElementById('successMessage');
 
@@ -49,7 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
             collegeDepartmentSelect.value.trim() !== '' && firstTimeApplySelect.value.trim() !== '' && firstApplicationDate.value.trim() !== '' &&
             yearAdmittedDate.value.trim() !== '' && admissionStatusSelect.value.trim() !== '' && pupcetRatingNumber.value.trim() !== '' &&
             hsAverageNumber.value.trim() !== '' && courseEnrolledSelect.value.trim() !== '' && yearLevelSelect.value.trim() !== '' &&
-            unitsEarnedNumber.value.trim() !== '' && reasonForStoppingArea.value.trim() !== '' && reasonForContinuingArea.value.trim() !== '') {
+            unitsEarnedNumber.value.trim() !== '' && reasonForStoppingArea.value.trim() !== '' && reasonForContinuingArea.value.trim() !== '' 
+            ) {
             // Prepare form data
             const formData = new FormData();
             formData.append('FamilyName', familyNameInput.value.trim());
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
              blurOverlay.style.display = 'none';
 
             // Display an alert if fields are empty
-            alert('Both family name and given name are required.');
+            alert('Please out all the required fields.');
         }
     }
 
@@ -119,6 +119,11 @@ document.addEventListener('DOMContentLoaded', function() {
             hideSuccessMessage();
         }, 3000); // 3000 milliseconds = 3 seconds
     });
+
+        
+    
+
+
 
     // Add event listener to detect when the next page starts loading
     window.addEventListener('beforeunload', function() {
