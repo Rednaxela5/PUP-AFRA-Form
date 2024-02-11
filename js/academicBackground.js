@@ -82,6 +82,21 @@ function Drop_toggleOthers() {
 
 }
 
+function toggle_hourStudy() {
+    var weeklyHrsStudy = document.querySelector('input[name="WeeklyHrsStud"]:checked').value;
+    var yesRadio = document.getElementById('yesWeeklyHrsStud');
+    var noRadio = document.getElementById('noWeeklyHrsStud');
+    var selectContainer = document.getElementById('row20-select-container');
+
+    if (weeklyHrsStudy === "Yes") {
+        selectContainer.style.visibility = 'visible';
+        yesRadio.value = selectContainer.value;
+    }
+
+
+}
+
+
 
 
 

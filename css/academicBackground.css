@@ -478,11 +478,13 @@ input[type="radio"] {
     text-align: left;
 }
 
-.row19-text:last-child {
+/* 
+    Removed by alex
+    .row19-text:last-child {
     font-size: 20px;
     font-weight: bold;
     color: #9A3030;
-}
+} */
 /* End of row19 css */
 
 /* Start of row20 css */
@@ -506,6 +508,11 @@ input[type="radio"] {
 
 .row20-select-container {
     flex-grow: 1;
+    display: grid;
+}
+
+#weeklyHrsStudSelect {
+    margin: auto
 }
 
 #weeklyHrsStudSelect {

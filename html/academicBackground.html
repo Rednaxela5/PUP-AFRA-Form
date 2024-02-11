@@ -268,7 +268,8 @@
         <!-- ROW 19 -->
         <div class="row19-text-container">
             <div class="row19-text">Do you have weekly hours of study? </div>
-            <div class="row19-text">If yes, how many hours?</div>
+            <!-- <div class="row19-text">If yes, how many hours?</div> Removed by alex --> 
+            
         </div>
 
         <!-- ROW 20 -->    
@@ -276,19 +277,21 @@
             <div class="row20-radio-container">
                 <!-- ROW 20.1 -->
                 <div class="row20-1-fields-container">
-                    <input type="radio" id="yesWeeklyHrsStud" name="YesWeeklyHrsStud" value="Yes">
+                    <input type="radio" id="yesWeeklyHrsStud" name="WeeklyHrsStud" value="Yes" onchange="toggle_hourStudy()">
                     <label for="yesWeeklyHrsStud" id="yesWeeklyHrsStudLabel">Yes</label>
                 </div>
 
                 <!-- ROW 20.2 -->
                 <div class="row20-2-fields-container">
-                    <input type="radio" id="noWeeklyHrsStud" name="NoWeeklyHrsStud" value="No">
+                    <input type="radio" id="noWeeklyHrsStud" name="WeeklyHrsStud" value="No" onchange="toggle_hourStudy()">
                     <label for="noWeeklyHrsStud" id="noWeeklyHrsStudLabel">No</label>
                 </div>
             </div>
 
             <!-- ROW 20.3 -->
             <div class="row20-select-container">
+                
+                <label for="weeklyHrsStudSelect" id="weeklyHrsTextLabel">If yes, how many hours?</label>
                 <select id="weeklyHrsStudSelect" name="weeklyHrsStudSelect" class="rounded-input">
                     <option value="" disabled selected>Select Hours</option>
                     <option value="1-5 Hours">1-5 Hours</option>
