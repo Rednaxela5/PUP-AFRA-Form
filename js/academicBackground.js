@@ -36,13 +36,52 @@ function purpose_toggleOthers() {
     var otherChecked = document.getElementById('otherInitialPurposeText');
 
     if (checkotherInitial.checked == true) {
-        otherChecked.style.display = 'flex';
+        otherChecked.style.visibility = 'visible'
+        checkotherInitial.value = otherChecked.value
     }
     else {
-        otherChecked.style.display = 'none';
+        otherChecked.style.visibility = 'hidden';
+        otherChecked.value = "";
+        checkotherInitial.value = "";
     }
 }
-   
+
+function howLong_toggleOthers() {
+    var checkHowLong = document.getElementById('howLongBeenAway').value;
+    var othersContainer = document.getElementById('othersContainer');
+    var othersInputBox = document.getElementById('otherSpecify');
+
+    if (checkHowLong === "Others") {
+        othersContainer.style.visibility = 'visible'
+        checkHowLong.value = othersContainer.value
+        
+    }
+    else {
+        othersContainer.style.visibility = 'hidden';
+        othersInputBox.value = "";
+        checkHowLong.value = "";
+    }
+
+}
+
+function Drop_toggleOthers() {
+    var checkDrop = document.getElementById('otherInitialPurposeDrop');
+    var valuecheckDrop = document.getElementById('otherInitialPurposeTextDrop').value;
+    var otherChecked = document.getElementById('otherInitialPurposeTextDrop');
+    
+    if (checkDrop.checked == true) {
+        otherChecked.style.visibility = 'visible'
+        checkDrop.value = otherChecked.value
+    }
+    else {
+        otherChecked.style.visibility = 'hidden';
+        otherChecked.value = "";
+        checkDrop.value = "";
+
+    }
+
+}
+
 
 
 

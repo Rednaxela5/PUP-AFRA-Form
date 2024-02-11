@@ -830,6 +830,7 @@ select option:disabled {
 
 
 #othersContainer{
+    display: none;
     width: 990px; 
     justify-content: space-between;
     margin-left: 125px;
