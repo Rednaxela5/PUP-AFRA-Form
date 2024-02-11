@@ -108,9 +108,9 @@ The following tools and technologies were involved in the making of this project
 ## Roadmap
 -   [x] ~~Select a manual form from PUP Website.~~
 -   [x] ~~Convert the form into HTML.~~
--   [x] Design the website in Figma
--   [x] Convert the design into HTML, CSS, JS
--   [x] Integrate Google Sheets API for the Databa
+-   [x] ~~Design the website in Figma~~
+-   [x] ~~Convert the design into HTML, CSS, JS~~
+-   [x] ~~Integrate Google Sheets API for the Database~~
 -   [ ] Integrate [Philippine Address Locator](https://github.com/wilfredpine/philippine-address-selector) for the Address Fields
 se
 -   [ ] Automated Email Confirmation
