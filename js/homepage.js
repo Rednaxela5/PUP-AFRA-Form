@@ -8,7 +8,7 @@ applyNowButton.addEventListener('click', () => {
 
     // Redirect to the login page after the animation ends
     setTimeout(() => {
-        window.location.href = 'login.html';
+        window.location.href = '../html/login.html';
     }, 100); // Adjust the timeout duration as needed to match the animation duration
 });
 
