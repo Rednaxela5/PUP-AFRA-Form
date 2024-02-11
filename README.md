@@ -110,6 +110,7 @@ Here are some of the challenges we faced while developing the website:
 
 * Time Constraints
 * Learning Curve
+* Difficulty in keeping track of the values from the user because there are many pages.
 * Integration of Google Sheets API to the website
 
 ## Roadmap
