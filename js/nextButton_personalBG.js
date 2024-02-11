@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
             formData.append('Age', ageSelect.value.trim());
             
             // Send a POST request to your GAS endpoint
-            fetch('https://script.google.com/macros/s/AKfycbzLBPTV9UYGtwgjZQgNjsneE4EpzT0OrncrHpAJJcu970nIgAu9WtNQ0cTQN5CORlg/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbwJaVvqlpRzhD4E1rVmO96-OzDSDkbq3Pp7KkAVN8HL6PCFT9ES65AOh7V5kagTX-zzKw/exec', {
                 method: 'POST',
                 body: formData
             })
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
              blurOverlay.style.display = 'none';
 
             // Display an alert if fields are empty
-            alert('Both family name and given name are required.');
+            alert('There are still required fields that are empty.');
         }
     }
 

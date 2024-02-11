@@ -97,19 +97,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
     
 
-    // Add event listener to the next button
-    const nextButton = document.getElementById('nextButton');
+    // // Add event listener to the next button
+    // const nextButton = document.getElementById('nextButton');
 
-    nextButton.addEventListener('click', function() {
-        // Check if all required fields are filled out
-        if (areAllFieldsFilledOut()) {
-            // Redirect to the academicBackground page
-             window.location.href = 'academicBackground.html';
-        } else {
-            // Display an error message
-            alert('Please fill out all required fields.');
-        }
-    });
+    // nextButton.addEventListener('click', function() {
+    //     // Check if all required fields are filled out
+    //     if (areAllFieldsFilledOut()) {
+    //         // Redirect to the academicBackground page
+    //          window.location.href = 'academicBackground.html';
+    //     } else {
+    //         // Display an error message
+    //         alert('Please fill out all required fields.');
+    //     }
+    // });
     
     const step3Button = document.getElementById('academic-background-step-button');
 
