@@ -86,11 +86,17 @@ function toggle_hourStudy() {
     var weeklyHrsStudy = document.querySelector('input[name="WeeklyHrsStud"]:checked').value;
     var yesRadio = document.getElementById('yesWeeklyHrsStud');
     var noRadio = document.getElementById('noWeeklyHrsStud');
+    var selectedHours = document.getElementById('weeklyHrsStudSelect');
     var selectContainer = document.getElementById('row20-select-container');
 
     if (weeklyHrsStudy === "Yes") {
-        selectContainer.style.visibility = 'visible';
-        yesRadio.value = selectContainer.value;
+        selectContainer.style.visibility = 'visible'
+        yesRadio.value = selectContainer.value
+    }
+    else {
+        selectContainer.style.visibility = 'hidden';
+        selectContainer.value = "";
+        noRadio.value = "";
     }
 
 
