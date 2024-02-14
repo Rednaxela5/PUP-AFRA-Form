@@ -29,11 +29,12 @@
 
 ## Table Of Contents
 
-* [About the Project](#about-the-project)
+* [About the Project](#about-the-website)
   * [Screenshots](#screenshots)
   * [Tools and Technologies](#tools-and-technologies)
+* [Challenges](#challenges)
 * [Roadmap](#roadmap)
-* [Contributing](#contributing)
+* [Contribute](#contribute)
 * [License](#license)
 * [Authors](#authors)
 
