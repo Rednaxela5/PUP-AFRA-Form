@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Rednaxela5/PUP-AFRA-Form">
-    <img src="assets/readme-screenshots/Real Website/01 Homepage.png" alt="Project Banner" width="100%" >
+    <img src="assets/readme-screenshots/Figma Designs/01_2 Home Page.png" alt="Project Banner" width="100%" >
   </a>
 
 <p align="center">
@@ -121,6 +121,7 @@ Here are some of the challenges we faced while developing the website:
 -   [x] ~~Integrate Google Sheets API for the Database~~
 -   [ ] Integrate [Philippine Address Locator](https://github.com/wilfredpine/philippine-address-selector) for the Address Fields
 se
+-   [ ] Make the website responsive
 -   [ ] Automated Email Confirmation
 
 # Contribute

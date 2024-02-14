@@ -1,0 +1,4 @@
+Challenges in WebDev frfr:
+1. When the user go back, the data doesn't retain
+2. The Family Name, Given Name, and Middle Name in Personal Background doesn't Update with what input in the Applicant Info.
+3. When User Selected Others, the database doesn't count it.
