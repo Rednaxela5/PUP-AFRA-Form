@@ -87,6 +87,13 @@ Take a look at some screenshots showcasing the website's design and functionalit
             <br />
             <p align="center">About Page</p></td>
     </tr>
+    <tr>
+      <td colspan="2">  
+          <img src="assets/readme-screenshots/Real Website/Application Status Page.png" />
+          <br />
+          <p align="center">Thank You Page</p>  
+      </td>
+    </tr>
       
 </table> 
 
